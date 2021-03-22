@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="BalancesTVCTableViewCell" customModule="AKSwiftSlideMenu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Andorra" translatesAutoresizingMaskIntoConstraints="NO" id="zKq-EM-mxs">
+                        <rect key="frame" x="5" y="12" width="30" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="API-Nk-eGY"/>
+                            <constraint firstAttribute="height" constant="20" id="T3J-tO-Mrl"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WbQ-gi-p7K">
+                        <rect key="frame" x="40" y="0.0" width="264" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liga" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frq-rt-APD">
+                                <rect key="frame" x="0.0" y="0.0" width="79" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Partido" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1W-kT-fJ8">
+                                <rect key="frame" x="79" y="0.0" width="92.5" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apuesta" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wd2-IN-LZH">
+                                <rect key="frame" x="171.5" y="0.0" width="53" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuota" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLq-fa-C26">
+                                <rect key="frame" x="224.5" y="0.0" width="39.5" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="pLq-fa-C26" secondAttribute="bottom" id="0NV-mW-hhP"/>
+                            <constraint firstItem="f1W-kT-fJ8" firstAttribute="leading" secondItem="frq-rt-APD" secondAttribute="trailing" id="1E5-Jn-LTE"/>
+                            <constraint firstItem="pLq-fa-C26" firstAttribute="leading" secondItem="Wd2-IN-LZH" secondAttribute="trailing" id="3gm-Zr-YbC"/>
+                            <constraint firstItem="Wd2-IN-LZH" firstAttribute="top" secondItem="WbQ-gi-p7K" secondAttribute="top" id="9cL-BG-vYz"/>
+                            <constraint firstAttribute="bottom" secondItem="frq-rt-APD" secondAttribute="bottom" id="Br1-i8-jrF"/>
+                            <constraint firstAttribute="bottom" secondItem="Wd2-IN-LZH" secondAttribute="bottom" id="IEu-wN-GNB"/>
+                            <constraint firstItem="f1W-kT-fJ8" firstAttribute="width" secondItem="WbQ-gi-p7K" secondAttribute="width" multiplier="35:100" id="KIM-4k-8ZY"/>
+                            <constraint firstItem="frq-rt-APD" firstAttribute="top" secondItem="WbQ-gi-p7K" secondAttribute="top" id="XiS-nt-SfJ"/>
+                            <constraint firstItem="pLq-fa-C26" firstAttribute="width" secondItem="WbQ-gi-p7K" secondAttribute="width" multiplier="15:100" id="f1B-Ir-aNW"/>
+                            <constraint firstItem="Wd2-IN-LZH" firstAttribute="width" secondItem="WbQ-gi-p7K" secondAttribute="width" multiplier="2:10" id="fx3-Mb-dav"/>
+                            <constraint firstItem="f1W-kT-fJ8" firstAttribute="top" secondItem="WbQ-gi-p7K" secondAttribute="top" id="hXB-V9-0Id"/>
+                            <constraint firstItem="frq-rt-APD" firstAttribute="leading" secondItem="WbQ-gi-p7K" secondAttribute="leading" id="iWC-7g-IHd"/>
+                            <constraint firstAttribute="bottom" secondItem="f1W-kT-fJ8" secondAttribute="bottom" id="oQU-hk-GFS"/>
+                            <constraint firstItem="Wd2-IN-LZH" firstAttribute="leading" secondItem="f1W-kT-fJ8" secondAttribute="trailing" id="t9g-iH-1Aj"/>
+                            <constraint firstItem="pLq-fa-C26" firstAttribute="top" secondItem="WbQ-gi-p7K" secondAttribute="top" id="yxm-Lo-PeW"/>
+                            <constraint firstItem="frq-rt-APD" firstAttribute="width" secondItem="WbQ-gi-p7K" secondAttribute="width" multiplier="3:10" id="zg7-8p-AKh"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="acertadob" translatesAutoresizingMaskIntoConstraints="NO" id="1w5-44-9th">
+                        <rect key="frame" x="307" y="17" width="10" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="hqe-Np-tk6"/>
+                            <constraint firstAttribute="height" constant="10" id="xN5-8p-lPE"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="WbQ-gi-p7K" secondAttribute="trailing" constant="16" id="86G-EP-eye"/>
+                    <constraint firstItem="WbQ-gi-p7K" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ArX-d5-nnk"/>
+                    <constraint firstItem="zKq-EM-mxs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="NfQ-l2-6jA"/>
+                    <constraint firstAttribute="bottom" secondItem="WbQ-gi-p7K" secondAttribute="bottom" id="dv2-1a-SjX"/>
+                    <constraint firstAttribute="trailing" secondItem="1w5-44-9th" secondAttribute="trailing" constant="3" id="ii7-Rv-mJC"/>
+                    <constraint firstItem="WbQ-gi-p7K" firstAttribute="leading" secondItem="zKq-EM-mxs" secondAttribute="trailing" constant="5" id="lIO-47-9TS"/>
+                    <constraint firstItem="1w5-44-9th" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="upo-Lc-fd0"/>
+                    <constraint firstItem="zKq-EM-mxs" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="zg2-af-c6q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgAcertado" destination="1w5-44-9th" id="hBj-qh-WEu"/>
+                <outlet property="imgBandera" destination="zKq-EM-mxs" id="w7U-DU-Qla"/>
+                <outlet property="txtBalance" destination="Wd2-IN-LZH" id="67c-tB-bZU"/>
+                <outlet property="txtCuota" destination="pLq-fa-C26" id="Eo6-uU-ZIy"/>
+                <outlet property="txtLiga" destination="frq-rt-APD" id="ztC-ia-HnS"/>
+                <outlet property="txtPartido" destination="f1W-kT-fJ8" id="EGf-5j-Nsz"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="89.955022488755631"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Andorra" width="29" height="20"/>
+        <image name="acertadob" width="40" height="41"/>
+    </resources>
+</document>

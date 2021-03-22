@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="AKSwiftSlideMenu/Base.lproj/Main.storyboard" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.3" build-num="10G8"/>
+    </header>
+    <body>
+      <trans-unit id="0ZZ-zY-0yE.text">
+        <source>Bet Data Analysis</source>
+        <target>Bet Data Analysis</target>
+        <note>Class = "UILabel"; text = "Bet Data Analysis"; ObjectID = "0ZZ-zY-0yE";</note>
+      </trans-unit>
+      <trans-unit id="0dY-4j-WAr.title">
+        <source>Pronosticos Bet Data</source>
+        <target>Pronosticos Bet Data</target>
+        <note>Class = "UINavigationItem"; title = "Pronosticos Bet Data"; ObjectID = "0dY-4j-WAr";</note>
+      </trans-unit>
+      <trans-unit id="1MI-6M-UGm.text">
+        <source>País</source>
+        <target>País</target>
+        <note>Class = "UILabel"; text = "País"; ObjectID = "1MI-6M-UGm";</note>
+      </trans-unit>
+      <trans-unit id="2Wk-Gk-yNx.normalTitle">
+        <source>Anàlisis del 
+   Partido</source>
+        <target>Anàlisis del 
+   Partido</target>
+        <note>Class = "UIButton"; normalTitle = "Anàlisis del \n   Partido"; ObjectID = "2Wk-Gk-yNx";</note>
+      </trans-unit>
+      <trans-unit id="4cD-nU-m8q.placeholder">
+        <source>Correo Electrónico</source>
+        <target>Correo Electrónico</target>
+        <note>Class = "UITextField"; placeholder = "Correo Electrónico"; ObjectID = "4cD-nU-m8q";</note>
+      </trans-unit>
+      <trans-unit id="6be-uQ-Bbb.normalTitle">
+        <source>Jugar en 
+    Vivo</source>
+        <target>Jugar en 
+    Vivo</target>
+        <note>Class = "UIButton"; normalTitle = "Jugar en \n    Vivo"; ObjectID = "6be-uQ-Bbb";</note>
+      </trans-unit>
+      <trans-unit id="6y2-H0-udL.normalTitle">
+        <source>Pronosticos 
+   Bet Data</source>
+        <target>Pronosticos 
+   Bet Data</target>
+        <note>Class = "UIButton"; normalTitle = "Pronosticos \n   Bet Data"; ObjectID = "6y2-H0-udL";</note>
+      </trans-unit>
+      <trans-unit id="7g9-2b-Sh5.normalTitle">
+        <source>Jugar en 
+    Vivo</source>
+        <target>Jugar en 
+    Vivo</target>
+        <note>Class = "UIButton"; normalTitle = "Jugar en \n    Vivo"; ObjectID = "7g9-2b-Sh5";</note>
+      </trans-unit>
+      <trans-unit id="7pd-ZV-z4O.text">
+        <source>País</source>
+        <target>País</target>
+        <note>Class = "UILabel"; text = "País"; ObjectID = "7pd-ZV-z4O";</note>
+      </trans-unit>
+      <trans-unit id="8Sf-Vd-maD.text">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "8Sf-Vd-maD";</note>
+      </trans-unit>
+      <trans-unit id="9Jc-jl-H2N.placeholder">
+        <source>Código</source>
+        <target>Código</target>
+        <note>Class = "UITextField"; placeholder = "Código"; ObjectID = "9Jc-jl-H2N";</note>
+      </trans-unit>
+      <trans-unit id="9Rt-b9-o7m.text">
+        <source>Cerrar Sesión</source>
+        <target>Cerrar Sesión</target>
+        <note>Class = "UILabel"; text = "Cerrar Sesión"; ObjectID = "9Rt-b9-o7m";</note>
+      </trans-unit>
+      <trans-unit id="C7R-yX-zrc.text">
+        <source>Código de Amistad</source>
+        <target>Código de Amistad</target>
+        <note>Class = "UILabel"; text = "Código de Amistad"; ObjectID = "C7R-yX-zrc";</note>
+      </trans-unit>
+      <trans-unit id="HHi-FN-B9T.normalTitle">
+        <source>Button</source>
+        <target>Button</target>
+        <note>Class = "UIButton"; normalTitle = "Button"; ObjectID = "HHi-FN-B9T";</note>
+      </trans-unit>
+      <trans-unit id="Igj-YM-aYI.text">
+        <source>Basket</source>
+        <target>Basket</target>
+        <note>Class = "UILabel"; text = "Basket"; ObjectID = "Igj-YM-aYI";</note>
+      </trans-unit>
+      <trans-unit id="J2n-QG-5cd.normalTitle">
+        <source>Aviso Legal</source>
+        <target>Aviso Legal</target>
+        <note>Class = "UIButton"; normalTitle = "Aviso Legal"; ObjectID = "J2n-QG-5cd";</note>
+      </trans-unit>
+      <trans-unit id="J7q-85-CWM.text">
+        <source>Suscripción</source>
+        <target>Suscripción</target>
+        <note>Class = "UILabel"; text = "Suscripción"; ObjectID = "J7q-85-CWM";</note>
+      </trans-unit>
+      <trans-unit id="JHg-Yf-KOS.placeholder">
+        <source>Password</source>
+        <target>Password</target>
+        <note>Class = "UITextField"; placeholder = "Password"; ObjectID = "JHg-Yf-KOS";</note>
+      </trans-unit>
+      <trans-unit id="JMk-uI-P3R.normalTitle">
+        <source>Como usar 
+     la app</source>
+        <target>Como usar 
+     la app</target>
+        <note>Class = "UIButton"; normalTitle = "Como usar \n     la app"; ObjectID = "JMk-uI-P3R";</note>
+      </trans-unit>
+      <trans-unit id="Kyx-Qp-Iws.normalTitle">
+        <source>Como usar 
+     la app</source>
+        <target>Como usar 
+     la app</target>
+        <note>Class = "UIButton"; normalTitle = "Como usar \n     la app"; ObjectID = "Kyx-Qp-Iws";</note>
+      </trans-unit>
+      <trans-unit id="LT3-Un-kHN.normalTitle">
+        <source>Política de Privacidad</source>
+        <target>Política de Privacidad</target>
+        <note>Class = "UIButton"; normalTitle = "Política de Privacidad"; ObjectID = "LT3-Un-kHN";</note>
+      </trans-unit>
+      <trans-unit id="MH3-9g-apB.text">
+        <source>Sesión</source>
+        <target>Sesión</target>
+        <note>Class = "UILabel"; text = "Sesión"; ObjectID = "MH3-9g-apB";</note>
+      </trans-unit>
+      <trans-unit id="NOM-17-PNO.title">
+        <source>Login</source>
+        <target>Login</target>
+        <note>Class = "UIViewController"; title = "Login"; ObjectID = "NOM-17-PNO";</note>
+      </trans-unit>
+      <trans-unit id="PsY-83-mav.title">
+        <source>Pronosticos Bet Data</source>
+        <target>Pronosticos Bet Data</target>
+        <note>Class = "UINavigationItem"; title = "Pronosticos Bet Data"; ObjectID = "PsY-83-mav";</note>
+      </trans-unit>
+      <trans-unit id="Q5o-h3-Tg4.text">
+        <source>Registrarse</source>
+        <target>Registrarse</target>
+        <note>Class = "UILabel"; text = "Registrarse"; ObjectID = "Q5o-h3-Tg4";</note>
+      </trans-unit>
+      <trans-unit id="S6a-Xe-aAd.text">
+        <source>Lets Bet!!</source>
+        <target>Lets Bet!!</target>
+        <note>Class = "UILabel"; text = "Lets Bet!!"; ObjectID = "S6a-Xe-aAd";</note>
+      </trans-unit>
+      <trans-unit id="VWt-Ew-EGp.normalTitle">
+        <source>Volver</source>
+        <target>Volver</target>
+        <note>Class = "UIButton"; normalTitle = "Volver"; ObjectID = "VWt-Ew-EGp";</note>
+      </trans-unit>
+      <trans-unit id="WFt-CC-5fh.text">
+        <source>Tenis</source>
+        <target>Tenis</target>
+        <note>Class = "UILabel"; text = "Tenis"; ObjectID = "WFt-CC-5fh";</note>
+      </trans-unit>
+      <trans-unit id="Xfn-in-ni5.text">
+        <source>Acepto</source>
+        <target>Acepto</target>
+        <note>Class = "UILabel"; text = "Acepto"; ObjectID = "Xfn-in-ni5";</note>
+      </trans-unit>
+      <trans-unit id="XmK-zf-FaY.placeholder">
+        <source>Correo</source>
+        <target>Correo</target>
+        <note>Class = "UITextField"; placeholder = "Correo"; ObjectID = "XmK-zf-FaY";</note>
+      </trans-unit>
+      <trans-unit id="YmQ-57-Og2.text">
+        <source>Código Amistad</source>
+        <target>Código Amistad</target>
+        <note>Class = "UILabel"; text = "Código Amistad"; ObjectID = "YmQ-57-Og2";</note>
+      </trans-unit>
+      <trans-unit id="Zcl-L6-kAP.normalTitle">
+        <source>Volver</source>
+        <target>Volver</target>
+        <note>Class = "UIButton"; normalTitle = "Volver"; ObjectID = "Zcl-L6-kAP";</note>
+      </trans-unit>
+      <trans-unit id="a1u-Ki-tSz.title">
+        <source>Paises</source>
+        <target>Paises</target>
+        <note>Class = "UINavigationItem"; title = "Paises"; ObjectID = "a1u-Ki-tSz";</note>
+      </trans-unit>
+      <trans-unit id="abh-q4-qY7.normalTitle">
+        <source>Anàlisis del 
+   Partido</source>
+        <target>Anàlisis del 
+   Partido</target>
+        <note>Class = "UIButton"; normalTitle = "Anàlisis del \n   Partido"; ObjectID = "abh-q4-qY7";</note>
+      </trans-unit>
+      <trans-unit id="awx-1T-gZc.normalTitle">
+        <source>Pronosticos 
+   Bet Data</source>
+        <target>Pronosticos 
+   Bet Data</target>
+        <note>Class = "UIButton"; normalTitle = "Pronosticos \n   Bet Data"; ObjectID = "awx-1T-gZc";</note>
+      </trans-unit>
+      <trans-unit id="c7b-ev-E7o.normalTitle">
+        <source>Violaciones de Seguridad</source>
+        <target>Violaciones de Seguridad</target>
+        <note>Class = "UIButton"; normalTitle = "Violaciones de Seguridad"; ObjectID = "c7b-ev-E7o";</note>
+      </trans-unit>
+      <trans-unit id="c8r-KU-hNk.text">
+        <source>Acepto</source>
+        <target>Acepto</target>
+        <note>Class = "UILabel"; text = "Acepto"; ObjectID = "c8r-KU-hNk";</note>
+      </trans-unit>
+      <trans-unit id="czK-Fw-yNl.title">
+        <source>Pronosticos Bet Data</source>
+        <target>Pronosticos Bet Data</target>
+        <note>Class = "UIViewController"; title = "Pronosticos Bet Data"; ObjectID = "czK-Fw-yNl";</note>
+      </trans-unit>
+      <trans-unit id="eOr-Yy-IwJ.text">
+        <source>Validar Código</source>
+        <target>Validar Código</target>
+        <note>Class = "UILabel"; text = "Validar Código"; ObjectID = "eOr-Yy-IwJ";</note>
+      </trans-unit>
+      <trans-unit id="eof-xf-NkR.normalTitle">
+        <source>Registrarse</source>
+        <target>Registrarse</target>
+        <note>Class = "UIButton"; normalTitle = "Registrarse"; ObjectID = "eof-xf-NkR";</note>
+      </trans-unit>
+      <trans-unit id="f24-Ia-thn.title">
+        <source>Ligas</source>
+        <target>Ligas</target>
+        <note>Class = "UINavigationItem"; title = "Ligas"; ObjectID = "f24-Ia-thn";</note>
+      </trans-unit>
+      <trans-unit id="fLO-To-Jpq.normalTitle">
+        <source>Volver</source>
+        <target>Volver</target>
+        <note>Class = "UIButton"; normalTitle = "Volver"; ObjectID = "fLO-To-Jpq";</note>
+      </trans-unit>
+      <trans-unit id="fgq-ku-vbk.text">
+        <source>Bet Data</source>
+        <target>Bet Data</target>
+        <note>Class = "UILabel"; text = "Bet Data"; ObjectID = "fgq-ku-vbk";</note>
+      </trans-unit>
+      <trans-unit id="g5N-gQ-hlJ.text">
+        <source>Deportes</source>
+        <target>Deportes</target>
+        <note>Class = "UILabel"; text = "Deportes"; ObjectID = "g5N-gQ-hlJ";</note>
+      </trans-unit>
+      <trans-unit id="gMu-q2-PJn.text">
+        <source>0/10</source>
+        <target>0/10</target>
+        <note>Class = "UILabel"; text = "0/10"; ObjectID = "gMu-q2-PJn";</note>
+      </trans-unit>
+      <trans-unit id="gwv-3u-P3t.title">
+        <source>Pronosticos Bet Data</source>
+        <target>Pronosticos Bet Data</target>
+        <note>Class = "UIViewController"; title = "Pronosticos Bet Data"; ObjectID = "gwv-3u-P3t";</note>
+      </trans-unit>
+      <trans-unit id="iVf-JZ-pbE.normalTitle">
+        <source>Validar</source>
+        <target>Validar</target>
+        <note>Class = "UIButton"; normalTitle = "Validar"; ObjectID = "iVf-JZ-pbE";</note>
+      </trans-unit>
+      <trans-unit id="imx-fB-ksC.title">
+        <source>Registrarse</source>
+        <target>Registrarse</target>
+        <note>Class = "UIViewController"; title = "Registrarse"; ObjectID = "imx-fB-ksC";</note>
+      </trans-unit>
+      <trans-unit id="jal-GX-Ssc.placeholder">
+        <source>Usuario</source>
+        <target>Usuario</target>
+        <note>Class = "UITextField"; placeholder = "Usuario"; ObjectID = "jal-GX-Ssc";</note>
+      </trans-unit>
+      <trans-unit id="knt-Zv-N5T.text">
+        <source>Apuesta</source>
+        <target>Apuesta</target>
+        <note>Class = "UILabel"; text = "Apuesta"; ObjectID = "knt-Zv-N5T";</note>
+      </trans-unit>
+      <trans-unit id="l2x-PA-Jit.text">
+        <source>Partido</source>
+        <target>Partido</target>
+        <note>Class = "UILabel"; text = "Partido"; ObjectID = "l2x-PA-Jit";</note>
+      </trans-unit>
+      <trans-unit id="lQO-CS-9M8.normalTitle">
+        <source>Como usar 
+     la app</source>
+        <target>Como usar 
+     la app</target>
+        <note>Class = "UIButton"; normalTitle = "Como usar \n     la app"; ObjectID = "lQO-CS-9M8";</note>
+      </trans-unit>
+      <trans-unit id="lrJ-lw-9He.title">
+        <source>CodigoAmistad</source>
+        <target>CodigoAmistad</target>
+        <note>Class = "UIViewController"; title = "CodigoAmistad"; ObjectID = "lrJ-lw-9He";</note>
+      </trans-unit>
+      <trans-unit id="nKN-9i-ldY.placeholder">
+        <source>codigo Amistad</source>
+        <target>codigo Amistad</target>
+        <note>Class = "UITextField"; placeholder = "codigo Amistad"; ObjectID = "nKN-9i-ldY";</note>
+      </trans-unit>
+      <trans-unit id="nUu-es-Wkj.text">
+        <source>Futbol</source>
+        <target>Futbol</target>
+        <note>Class = "UILabel"; text = "Futbol"; ObjectID = "nUu-es-Wkj";</note>
+      </trans-unit>
+      <trans-unit id="nu9-Om-SgC.placeholder">
+        <source>Contraseña</source>
+        <target>Contraseña</target>
+        <note>Class = "UITextField"; placeholder = "Contraseña"; ObjectID = "nu9-Om-SgC";</note>
+      </trans-unit>
+      <trans-unit id="oKg-ge-NGg.normalTitle">
+        <source>Registrarse</source>
+        <target>Registrarse</target>
+        <note>Class = "UIButton"; normalTitle = "Registrarse"; ObjectID = "oKg-ge-NGg";</note>
+      </trans-unit>
+      <trans-unit id="oaP-IU-77K.normalTitle">
+        <source>Entrar</source>
+        <target>Entrar</target>
+        <note>Class = "UIButton"; normalTitle = "Entrar"; ObjectID = "oaP-IU-77K";</note>
+      </trans-unit>
+      <trans-unit id="p3V-jy-tcF.text">
+        <source>Liga</source>
+        <target>Liga</target>
+        <note>Class = "UILabel"; text = "Liga"; ObjectID = "p3V-jy-tcF";</note>
+      </trans-unit>
+      <trans-unit id="qyW-Yn-nRm.text">
+        <source>Liga</source>
+        <target>Liga</target>
+        <note>Class = "UILabel"; text = "Liga"; ObjectID = "qyW-Yn-nRm";</note>
+      </trans-unit>
+      <trans-unit id="rEc-P0-AUh.normalTitle">
+        <source>Olvidó Datos de su Cuenta</source>
+        <target>Olvidó Datos de su Cuenta</target>
+        <note>Class = "UIButton"; normalTitle = "Olvidó Datos de su Cuenta"; ObjectID = "rEc-P0-AUh";</note>
+      </trans-unit>
+      <trans-unit id="rkj-HX-ipj.normalTitle">
+        <source>Button</source>
+        <target>Button</target>
+        <note>Class = "UIButton"; normalTitle = "Button"; ObjectID = "rkj-HX-ipj";</note>
+      </trans-unit>
+      <trans-unit id="tgR-SC-5GB.normalTitle">
+        <source>Pronosticos 
+   Bet Data</source>
+        <target>Pronosticos 
+   Bet Data</target>
+        <note>Class = "UIButton"; normalTitle = "Pronosticos \n   Bet Data"; ObjectID = "tgR-SC-5GB";</note>
+      </trans-unit>
+      <trans-unit id="tuH-jp-pAv.normalTitle">
+        <source>Button</source>
+        <target>Button</target>
+        <note>Class = "UIButton"; normalTitle = "Button"; ObjectID = "tuH-jp-pAv";</note>
+      </trans-unit>
+      <trans-unit id="ujg-nR-pv9.placeholder">
+        <source>Usuario</source>
+        <target>Usuario</target>
+        <note>Class = "UITextField"; placeholder = "Usuario"; ObjectID = "ujg-nR-pv9";</note>
+      </trans-unit>
+      <trans-unit id="uzh-7w-c9r.text">
+        <source>Cuota</source>
+        <target>Cuota</target>
+        <note>Class = "UILabel"; text = "Cuota"; ObjectID = "uzh-7w-c9r";</note>
+      </trans-unit>
+      <trans-unit id="vWd-5t-eBp.normalTitle">
+        <source>Jugar en 
+    Vivo</source>
+        <target>Jugar en 
+    Vivo</target>
+        <note>Class = "UIButton"; normalTitle = "Jugar en \n    Vivo"; ObjectID = "vWd-5t-eBp";</note>
+      </trans-unit>
+      <trans-unit id="wJn-lZ-c41.title">
+        <source>Item</source>
+        <target>Item</target>
+        <note>Class = "UITabBarItem"; title = "Item"; ObjectID = "wJn-lZ-c41";</note>
+      </trans-unit>
+      <trans-unit id="xi1-ez-EEh.normalTitle">
+        <source>Select Date</source>
+        <target>Select Date</target>
+        <note>Class = "UIButton"; normalTitle = "Select Date"; ObjectID = "xi1-ez-EEh";</note>
+      </trans-unit>
+      <trans-unit id="yCv-eg-ucf.normalTitle">
+        <source>Anàlisis del 
+   Partido</source>
+        <target>Anàlisis del 
+   Partido</target>
+        <note>Class = "UIButton"; normalTitle = "Anàlisis del \n   Partido"; ObjectID = "yCv-eg-ucf";</note>
+      </trans-unit>
+      <trans-unit id="yW1-IS-JjB.title">
+        <source>Validar</source>
+        <target>Validar</target>
+        <note>Class = "UIViewController"; title = "Validar"; ObjectID = "yW1-IS-JjB";</note>
+      </trans-unit>
+      <trans-unit id="zLq-s4-mWc.text">
+        <source>AGZRQFT</source>
+        <target>AGZRQFT</target>
+        <note>Class = "UILabel"; text = "AGZRQFT"; ObjectID = "zLq-s4-mWc";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="AKSwiftSlideMenu/en.lproj/InfoPlist.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.3" build-num="10G8"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName">
+        <source>BetDataAnalysis</source>
+        <target>BetDataAnalysis</target>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName">
+        <source>AKSwiftSlideMenu</source>
+        <target>AKSwiftSlideMenu</target>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

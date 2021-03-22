@@ -1,0 +1,216 @@
+
+/* Class = "UILabel"; text = "Bet Data Analysis"; ObjectID = "0ZZ-zY-0yE"; */
+"0ZZ-zY-0yE.text" = "Bet Data Analysis";
+
+/* Class = "UINavigationItem"; title = "Pronosticos Bet Data"; ObjectID = "0dY-4j-WAr"; */
+"0dY-4j-WAr.title" = "Pronosticos Bet Data";
+
+/* Class = "UILabel"; text = "País"; ObjectID = "1MI-6M-UGm"; */
+"1MI-6M-UGm.text" = "País";
+
+/* Class = "UIButton"; normalTitle = "Anàlisis del \n   Partido"; ObjectID = "2Wk-Gk-yNx"; */
+"2Wk-Gk-yNx.normalTitle" = "Anàlisis del \n   Partido";
+
+/* Class = "UITextField"; placeholder = "Correo Electrónico"; ObjectID = "4cD-nU-m8q"; */
+"4cD-nU-m8q.placeholder" = "Correo Electrónico";
+
+/* Class = "UIButton"; normalTitle = "Jugar en \n    Vivo"; ObjectID = "6be-uQ-Bbb"; */
+"6be-uQ-Bbb.normalTitle" = "Jugar en \n    Vivo";
+
+/* Class = "UIButton"; normalTitle = "Pronosticos \n   Bet Data"; ObjectID = "6y2-H0-udL"; */
+"6y2-H0-udL.normalTitle" = "Pronosticos \n   Bet Data";
+
+/* Class = "UIButton"; normalTitle = "Jugar en \n    Vivo"; ObjectID = "7g9-2b-Sh5"; */
+"7g9-2b-Sh5.normalTitle" = "Jugar en \n    Vivo";
+
+/* Class = "UILabel"; text = "País"; ObjectID = "7pd-ZV-z4O"; */
+"7pd-ZV-z4O.text" = "País";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "8Sf-Vd-maD"; */
+"8Sf-Vd-maD.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Código"; ObjectID = "9Jc-jl-H2N"; */
+"9Jc-jl-H2N.placeholder" = "Código";
+
+/* Class = "UILabel"; text = "Cerrar Sesión"; ObjectID = "9Rt-b9-o7m"; */
+"9Rt-b9-o7m.text" = "Cerrar Sesión";
+
+/* Class = "UILabel"; text = "Código de Amistad"; ObjectID = "C7R-yX-zrc"; */
+"C7R-yX-zrc.text" = "Código de Amistad";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "HHi-FN-B9T"; */
+"HHi-FN-B9T.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Basket"; ObjectID = "Igj-YM-aYI"; */
+"Igj-YM-aYI.text" = "Basket";
+
+/* Class = "UIButton"; normalTitle = "Aviso Legal"; ObjectID = "J2n-QG-5cd"; */
+"J2n-QG-5cd.normalTitle" = "Aviso Legal";
+
+/* Class = "UILabel"; text = "Suscripción"; ObjectID = "J7q-85-CWM"; */
+"J7q-85-CWM.text" = "Suscripción";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "JHg-Yf-KOS"; */
+"JHg-Yf-KOS.placeholder" = "Password";
+
+/* Class = "UIButton"; normalTitle = "Apuesta \n    del día"; ObjectID = "JMk-uI-P3R"; */
+"JMk-uI-P3R.normalTitle" = "Apuesta \n    del día";
+
+/* Class = "UIButton"; normalTitle = "Apuesta \n    del día"; ObjectID = "Kyx-Qp-Iws"; */
+"Kyx-Qp-Iws.normalTitle" = "Apuesta \n    del día";
+
+/* Class = "UIButton"; normalTitle = "Política de Privacidad"; ObjectID = "LT3-Un-kHN"; */
+"LT3-Un-kHN.normalTitle" = "Política de Privacidad";
+
+/* Class = "UILabel"; text = "Sesión"; ObjectID = "MH3-9g-apB"; */
+"MH3-9g-apB.text" = "Sesión";
+
+/* Class = "UIViewController"; title = "Login"; ObjectID = "NOM-17-PNO"; */
+"NOM-17-PNO.title" = "Login";
+
+/* Class = "UINavigationItem"; title = "Pronosticos Bet Data"; ObjectID = "PsY-83-mav"; */
+"PsY-83-mav.title" = "Pronosticos Bet Data";
+
+/* Class = "UILabel"; text = "Registrarse"; ObjectID = "Q5o-h3-Tg4"; */
+"Q5o-h3-Tg4.text" = "Registrarse";
+
+/* Class = "UILabel"; text = "Lets Bet!!"; ObjectID = "S6a-Xe-aAd"; */
+"S6a-Xe-aAd.text" = "Lets Bet!!";
+
+/* Class = "UIButton"; normalTitle = "Volver"; ObjectID = "VWt-Ew-EGp"; */
+"VWt-Ew-EGp.normalTitle" = "Volver";
+
+/* Class = "UILabel"; text = "Tenis"; ObjectID = "WFt-CC-5fh"; */
+"WFt-CC-5fh.text" = "Tenis";
+
+/* Class = "UILabel"; text = "Acepto"; ObjectID = "Xfn-in-ni5"; */
+"Xfn-in-ni5.text" = "Acepto";
+
+/* Class = "UITextField"; placeholder = "Correo"; ObjectID = "XmK-zf-FaY"; */
+"XmK-zf-FaY.placeholder" = "Correo";
+
+/* Class = "UILabel"; text = "Código Amistad"; ObjectID = "YmQ-57-Og2"; */
+"YmQ-57-Og2.text" = "Código Amistad";
+
+/* Class = "UIButton"; normalTitle = "Volver"; ObjectID = "Zcl-L6-kAP"; */
+"Zcl-L6-kAP.normalTitle" = "Volver";
+
+/* Class = "UINavigationItem"; title = "Paises"; ObjectID = "a1u-Ki-tSz"; */
+"a1u-Ki-tSz.title" = "Paises";
+
+/* Class = "UIButton"; normalTitle = "Anàlisis del \n   Partido"; ObjectID = "abh-q4-qY7"; */
+"abh-q4-qY7.normalTitle" = "Anàlisis del \n   Partido";
+
+/* Class = "UIButton"; normalTitle = "Pronosticos \n   Bet Data"; ObjectID = "awx-1T-gZc"; */
+"awx-1T-gZc.normalTitle" = "Pronosticos \n   Bet Data";
+
+/* Class = "UIButton"; normalTitle = "Violaciones de Seguridad"; ObjectID = "c7b-ev-E7o"; */
+"c7b-ev-E7o.normalTitle" = "Violaciones de Seguridad";
+
+/* Class = "UILabel"; text = "Acepto"; ObjectID = "c8r-KU-hNk"; */
+"c8r-KU-hNk.text" = "Acepto";
+
+/* Class = "UIViewController"; title = "Pronosticos Bet Data"; ObjectID = "czK-Fw-yNl"; */
+"czK-Fw-yNl.title" = "Pronosticos Bet Data";
+
+/* Class = "UILabel"; text = "Validar Código"; ObjectID = "eOr-Yy-IwJ"; */
+"eOr-Yy-IwJ.text" = "Validar Código";
+
+/* Class = "UIButton"; normalTitle = "Registrarse"; ObjectID = "eof-xf-NkR"; */
+"eof-xf-NkR.normalTitle" = "Registrarse";
+
+/* Class = "UINavigationItem"; title = "Ligas"; ObjectID = "f24-Ia-thn"; */
+"f24-Ia-thn.title" = "Ligas";
+
+/* Class = "UIButton"; normalTitle = "Volver"; ObjectID = "fLO-To-Jpq"; */
+"fLO-To-Jpq.normalTitle" = "Volver";
+
+/* Class = "UILabel"; text = "Bet Data"; ObjectID = "fgq-ku-vbk"; */
+"fgq-ku-vbk.text" = "Bet Data";
+
+/* Class = "UILabel"; text = "Deportes"; ObjectID = "g5N-gQ-hlJ"; */
+"g5N-gQ-hlJ.text" = "Deportes";
+
+/* Class = "UILabel"; text = "0/10"; ObjectID = "gMu-q2-PJn"; */
+"gMu-q2-PJn.text" = "0/10";
+
+/* Class = "UIViewController"; title = "Pronosticos Bet Data"; ObjectID = "gwv-3u-P3t"; */
+"gwv-3u-P3t.title" = "Pronosticos Bet Data";
+
+/* Class = "UIButton"; normalTitle = "Validar"; ObjectID = "iVf-JZ-pbE"; */
+"iVf-JZ-pbE.normalTitle" = "Validar";
+
+/* Class = "UIViewController"; title = "Registrarse"; ObjectID = "imx-fB-ksC"; */
+"imx-fB-ksC.title" = "Registrarse";
+
+/* Class = "UITextField"; placeholder = "Usuario"; ObjectID = "jal-GX-Ssc"; */
+"jal-GX-Ssc.placeholder" = "Usuario";
+
+/* Class = "UILabel"; text = "Apuesta"; ObjectID = "knt-Zv-N5T"; */
+"knt-Zv-N5T.text" = "Apuesta";
+
+/* Class = "UILabel"; text = "Partido"; ObjectID = "l2x-PA-Jit"; */
+"l2x-PA-Jit.text" = "Partido";
+
+/* Class = "UIButton"; normalTitle = "Apuesta \n    del día"; ObjectID = "lQO-CS-9M8"; */
+"lQO-CS-9M8.normalTitle" = "Apuesta \n    del día";
+
+/* Class = "UIViewController"; title = "CodigoAmistad"; ObjectID = "lrJ-lw-9He"; */
+"lrJ-lw-9He.title" = "CodigoAmistad";
+
+/* Class = "UITextField"; placeholder = "codigo Amistad"; ObjectID = "nKN-9i-ldY"; */
+"nKN-9i-ldY.placeholder" = "codigo Amistad";
+
+/* Class = "UILabel"; text = "Futbol"; ObjectID = "nUu-es-Wkj"; */
+"nUu-es-Wkj.text" = "Futbol";
+
+/* Class = "UITextField"; placeholder = "Contraseña"; ObjectID = "nu9-Om-SgC"; */
+"nu9-Om-SgC.placeholder" = "Contraseña";
+
+/* Class = "UIButton"; normalTitle = "Registrarse"; ObjectID = "oKg-ge-NGg"; */
+"oKg-ge-NGg.normalTitle" = "Registrarse";
+
+/* Class = "UIButton"; normalTitle = "Entrar"; ObjectID = "oaP-IU-77K"; */
+"oaP-IU-77K.normalTitle" = "Entrar";
+
+/* Class = "UILabel"; text = "Liga"; ObjectID = "p3V-jy-tcF"; */
+"p3V-jy-tcF.text" = "Liga";
+
+/* Class = "UILabel"; text = "Liga"; ObjectID = "qyW-Yn-nRm"; */
+"qyW-Yn-nRm.text" = "Liga";
+
+/* Class = "UIButton"; normalTitle = "Olvidó Datos de su Cuenta"; ObjectID = "rEc-P0-AUh"; */
+"rEc-P0-AUh.normalTitle" = "Olvidó Datos de su Cuenta";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "rkj-HX-ipj"; */
+"rkj-HX-ipj.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Pronosticos \n   Bet Data"; ObjectID = "tgR-SC-5GB"; */
+"tgR-SC-5GB.normalTitle" = "Pronosticos \n   Bet Data";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "tuH-jp-pAv"; */
+"tuH-jp-pAv.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Usuario"; ObjectID = "ujg-nR-pv9"; */
+"ujg-nR-pv9.placeholder" = "Usuario";
+
+/* Class = "UILabel"; text = "Cuota"; ObjectID = "uzh-7w-c9r"; */
+"uzh-7w-c9r.text" = "Cuota";
+
+/* Class = "UIButton"; normalTitle = "Jugar en \n    Vivo"; ObjectID = "vWd-5t-eBp"; */
+"vWd-5t-eBp.normalTitle" = "Jugar en \n    Vivo";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "wJn-lZ-c41"; */
+"wJn-lZ-c41.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "Select Date"; ObjectID = "xi1-ez-EEh"; */
+"xi1-ez-EEh.normalTitle" = "Select Date";
+
+/* Class = "UIButton"; normalTitle = "Anàlisis del \n   Partido"; ObjectID = "yCv-eg-ucf"; */
+"yCv-eg-ucf.normalTitle" = "Anàlisis del \n   Partido";
+
+/* Class = "UIViewController"; title = "Validar"; ObjectID = "yW1-IS-JjB"; */
+"yW1-IS-JjB.title" = "Validar";
+
+/* Class = "UILabel"; text = "AGZRQFT"; ObjectID = "zLq-s4-mWc"; */
+"zLq-s4-mWc.text" = "AGZRQFT";
