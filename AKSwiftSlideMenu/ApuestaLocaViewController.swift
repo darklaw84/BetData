@@ -7,6 +7,7 @@ var locos = [EstructuraEquiposPartido]()
 class ApuestaLocaViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource {
     
     
+    @IBOutlet weak var lblCuotaFinal: UILabel!
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -317,8 +318,8 @@ class ApuestaLocaViewController: BaseViewController,UITableViewDelegate,UITableV
                     np.tipoResPartido=p.tipoResPartido
                     np.balance = p.resultadoPartido
                     np.finalizado = p.finalizado
-                                       np.finalLocal = p.finalLocal
-                                       np.finalVisitante = p.finalVisitante
+                    np.finalLocal = p.finalLocal
+                    np.finalVisitante = p.finalVisitante
                     
                     np.cuota = ""
                     for c in cuotas
@@ -364,6 +365,11 @@ class ApuestaLocaViewController: BaseViewController,UITableViewDelegate,UITableV
                             np.acertado = "0"
                         }
                     }
+                    else if (np.balance == "-1.5")
+                    {
+                        // ponemos esta linea para no tomar en cuenta los -1.5
+                        np.cuota = ""
+                    }
                     else if (np.balance == "ME")
                     {
                         np.balance = "-3.5"
@@ -372,7 +378,7 @@ class ApuestaLocaViewController: BaseViewController,UITableViewDelegate,UITableV
                             if c.pronostico == np.balance
                             {
                                 np.cuota = c.cuota
-                               
+                                
                                 break
                             }
                         }
@@ -393,7 +399,7 @@ class ApuestaLocaViewController: BaseViewController,UITableViewDelegate,UITableV
                             if c.pronostico == np.balance
                             {
                                 np.cuota = c.cuota
-                               
+                                
                                 break
                             }
                         }
@@ -408,7 +414,7 @@ class ApuestaLocaViewController: BaseViewController,UITableViewDelegate,UITableV
                     }
                     if np.cuota != nil && np.cuota != ""
                     {
-                    locos.append( np)
+                        locos.append( np)
                     }
                     
                 }
@@ -417,24 +423,36 @@ class ApuestaLocaViewController: BaseViewController,UITableViewDelegate,UITableV
         }
         
         locos.sort(by: sortPorCuota)
- 
         
-        if locos.count>6
+        
+        if locos.count>5
         {
             
-            while locos.count>6
+            while locos.count>5
             {
                 locos.removeLast()
             }
         }
+        
+        // una vez que tenemos los que se van a poner calculamos la cuota
+        
+        var cuotaFinal = 1.00
+        
+        for p in locos
+        {
+            cuotaFinal = cuotaFinal * p.cuota!.toDouble()!
+        }
+        
+        lblCuotaFinal.text = "Cuota Final: "+String(format: "%.2f", cuotaFinal)
+        
         
         
         
     }
     
     func sortPorCuota(this:EstructuraEquiposPartido, that:EstructuraEquiposPartido) -> Bool {
-           return this.cuota!.toDouble()! > that.cuota!.toDouble()!
-       }
+        return this.cuota!.toDouble()! > that.cuota!.toDouble()!
+    }
     
     func  validarCuota ( cuota : String) -> Bool
     {

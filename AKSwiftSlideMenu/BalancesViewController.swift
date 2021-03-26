@@ -143,7 +143,7 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
         var color = ""
         
         if tipoResPartido.toInt()! <= 8 || tipoResPartido.toInt()! == 13 || tipoResPartido.toInt()! == 14
-            || tipoResPartido.toInt()! == 15 || tipoResPartido.toInt()! == 16
+            || tipoResPartido.toInt()! == 15 || tipoResPartido.toInt()! == 16 || tipoResPartido.toInt()! == 17 || tipoResPartido.toInt()! == 18
         {
             color = "000000"
         }
@@ -234,31 +234,34 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
     {
         balances = [EstructuraEquiposPartido]()
         
-       var completos = [EstructuraEquiposPartido]()
+        var completos = [EstructuraEquiposPartido]()
         completos.append(contentsOf: todos)
         
         completos.append(contentsOf: menos35)
-        
       
+        
+        
+        
         
         var rp1 = [EstructuraEquiposPartido]()
         var rp2 = [EstructuraEquiposPartido]()
-        let rp3 = [EstructuraEquiposPartido]()
+        var rp3 = [EstructuraEquiposPartido]()
         var rp4 = [EstructuraEquiposPartido]()
         var rp5 = [EstructuraEquiposPartido]()
         var rp6 = [EstructuraEquiposPartido]()
-        let rp7 = [EstructuraEquiposPartido]()
+        var rp7 = [EstructuraEquiposPartido]()
         var rp8 = [EstructuraEquiposPartido]()
         var rp9 = [EstructuraEquiposPartido]()
-        let rp10 = [EstructuraEquiposPartido]()
+        var rp10 = [EstructuraEquiposPartido]()
         var rp11 = [EstructuraEquiposPartido]()
         var rp12 = [EstructuraEquiposPartido]()
         var rp13 = [EstructuraEquiposPartido]()
         var rp14 = [EstructuraEquiposPartido]()
+        var rp1405 = [EstructuraEquiposPartido]()
         var rp15 = [EstructuraEquiposPartido]()
         var rp16 = [EstructuraEquiposPartido]()
         var cornersPositivo = [EstructuraEquiposPartido]()
-        var cornersNegativo = [EstructuraEquiposPartido]()
+        //  var cornersNegativo = [EstructuraEquiposPartido]()
         var tarjetasPositivo = [EstructuraEquiposPartido]()
         var tarjetasNegativo = [EstructuraEquiposPartido]()
         var conCuota = [EstructuraEquiposPartido]()
@@ -322,8 +325,13 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                     np.cuotaPartido=p.cuotaPartido
                     np.tipoResPartido=p.tipoResPartido
                     np.finalizado = p.finalizado
-                                       np.finalLocal = p.finalLocal
-                                       np.finalVisitante = p.finalVisitante
+                    np.finalLocal = p.finalLocal
+                    np.finalVisitante = p.finalVisitante
+                    np.tarjetasLocal = p.tarjetasLocal
+                    np.tarjetasVisitante = p.tarjetasVisitante
+                    np.cornersFinalLocal = p.cornersFinalLocal
+                    np.cornersFinalVisitante = p.cornersFinalVisitante
+                    
                     
                     if p.cuotaPartido != nil
                     {
@@ -432,7 +440,9 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                 {
                                     if np.localvisitante == "V"
                                     {
+                                       
                                         rp1.append(np)
+                                        
                                     }
                                     else
                                     {
@@ -450,7 +460,9 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                 }
                                 else if np.tipoResPartido == "2"
                                 {
+                                   
                                     rp2.append(np)
+                                    
                                 }
                                 else if np.tipoResPartido == "3"
                                 {
@@ -458,13 +470,17 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                 }
                                 else if np.tipoResPartido == "4"
                                 {
+                                   
                                     rp4.append(np)
+                                    
                                 }
                                 else if np.tipoResPartido == "5"
                                 {
                                     if np.localvisitante == "L"
                                     {
+                                        
                                         rp5.append(np)
+                                        
                                     }
                                 }
                                 else if np.tipoResPartido == "6"
@@ -480,7 +496,9 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                         {
                                             np.acertado = "0"
                                         }
+                                       
                                         rp6.append(np)
+                                        
                                     }
                                     else
                                     {
@@ -496,7 +514,10 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                                     {
                                                         if mediaGolvisitantecomoVisitante! < 1
                                                         {
+                                                            if np.cuota != ""
+                                                            {
                                                             rp6.append(np)
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -511,13 +532,17 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                 }
                                 else if np.tipoResPartido == "8"
                                 {
+                                   
                                     rp8.append(np)
+                                    
                                 }
                                 else if np.tipoResPartido == "9"
                                 {
                                     if np.localvisitante == "L"
                                     {
+                                       
                                         rp9.append(np)
+                                        
                                     }
                                 }
                                 else if np.tipoResPartido == "10"
@@ -528,7 +553,9 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                 {
                                     if np.localvisitante == "L"
                                     {
+                                       
                                         rp11.append(np)
+                                        
                                     }
                                 }
                                 else if np.tipoResPartido == "12"
@@ -544,7 +571,9 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                         {
                                             np.acertado = "0"
                                         }
+                                        
                                         rp12.append(np)
+                                        
                                     }
                                 }
                             }//nil
@@ -587,10 +616,9 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                     np.acertado = "0"
                                 }
                             }
-                            if np.cuota != ""
-                            {
+                           
                                 rp13.append(np)
-                            }
+                            
                         }
                         
                         
@@ -617,8 +645,11 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                 {
                                     np.acertado = "0"
                                 }
+                               
+                                    rp14.append(np)
+                                
                             }
-                            else
+                            else if (np.balance == "-1.5")
                             {
                                 
                                 if finalLocal + finalVisitante<2 && finalizado
@@ -629,11 +660,72 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                 {
                                     np.acertado = "0"
                                 }
+                              
+                                    rp14.append(np)
+                                
                             }
-                            if np.cuota != ""
+                            else if (np.balance == "+0.5")
                             {
-                                rp14.append(np)
+                                if finalLocal + finalVisitante>0 && finalizado
+                                {
+                                    np.acertado = "1"
+                                }
+                                else
+                                {
+                                    np.acertado = "0"
+                                }
+                               
+                                    rp1405.append(np)
+                                
                             }
+                            else if (np.balance == "-0.5")
+                            {
+                                
+                                if finalLocal + finalVisitante==0 && finalizado
+                                {
+                                    np.acertado = "1"
+                                }
+                                else
+                                {
+                                    np.acertado = "0"
+                                }
+                                
+                                    rp1405.append(np)
+                                
+                            }
+                            else if (np.balance == "+2.5")
+                            {
+                                if finalLocal + finalVisitante>2 && finalizado
+                                {
+                                    np.acertado = "1"
+                                }
+                                else
+                                {
+                                    np.acertado = "0"
+                                }
+                                
+                                    rp14.append(np)
+                                
+                            }
+                            else if (np.balance == "-2.5")
+                            {
+                                
+                                if finalLocal + finalVisitante < 3 && finalizado
+                                {
+                                    np.acertado = "1"
+                                }
+                                else
+                                {
+                                    np.acertado = "0"
+                                }
+                                
+                                    rp14.append(np)
+                                
+                            }
+                            
+                            
+                            
+                            
                         }
                         
                         if np.tipoResPartido == "15"
@@ -681,68 +773,198 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                     np.acertado = "0"
                                 }
                             }
-                            if np.cuota != ""
-                            {
+                           
                                 rp15.append(np)
-                            }
+                            
                         }
                         
                         
                         
                         if np.tipoResPartido == "16"
-                                               {
-                                                   np.cuota = ""
-                                                   for c in cuotas
-                                                   {
-                                                       if c.pronostico == p.resultadoPartido
-                                                       {
-                                                           np.cuota = c.cuota
-                                                           break
-                                                       }
-                                                   }
-                                                   
-                                                   np.balance = p.resultadoPartido
-                                                   if (np.balance == "1X")
-                                                   {
-                                                       if finalLocal >= finalVisitante && finalizado
-                                                       {
-                                                           np.acertado = "1"
-                                                       }
-                                                       else
-                                                       {
-                                                           np.acertado = "0"
-                                                       }
-                                                   }
-                                                   else if (np.balance == "X2")
-                                                   {
-                                                       if finalLocal <= finalVisitante && finalizado
-                                                       {
-                                                           np.acertado = "1"
-                                                       }
-                                                       else
-                                                       {
-                                                           np.acertado = "0"
-                                                       }
-                                                   }
-                                                else if (np.balance == "12")
-                                                {
-                                                    if ((finalLocal < finalVisitante) || (finalLocal > finalVisitante)) && finalizado
-                                                    {
-                                                        np.acertado = "1"
-                                                    }
-                                                    else
-                                                    {
-                                                        np.acertado = "0"
-                                                    }
-                                                }
-                                                   if np.cuota != ""
-                                                   {
-                                                       rp16.append(np)
-                                                   }
-                                               }
-                                               
-                                               
-                                               
+                        {
+                            np.cuota = ""
+                            for c in cuotas
+                            {
+                                if c.pronostico == p.resultadoPartido
+                                {
+                                    np.cuota = c.cuota
+                                    break
+                                }
+                            }
+                            
+                            np.balance = p.resultadoPartido
+                            if (np.balance == "1X")
+                            {
+                                if finalLocal >= finalVisitante && finalizado
+                                {
+                                    np.acertado = "1"
+                                }
+                                else
+                                {
+                                    np.acertado = "0"
+                                }
+                            }
+                            else if (np.balance == "X2")
+                            {
+                                if finalLocal <= finalVisitante && finalizado
+                                {
+                                    np.acertado = "1"
+                                }
+                                else
+                                {
+                                    np.acertado = "0"
+                                }
+                            }
+                            else if (np.balance == "12")
+                            {
+                                if ((finalLocal < finalVisitante) || (finalLocal > finalVisitante)) && finalizado
+                                {
+                                    np.acertado = "1"
+                                }
+                                else
+                                {
+                                    np.acertado = "0"
+                                }
+                            }
+                            
+                                rp16.append(np)
+                            
+                        }
+                        
+                        if np.tipoResPartido == "17"
+                        {
+                            np.cuota = ""
+                            
+                            
+                            var tarjetasLocal = 0.00
+                            if (p.tarjetasLocal != nil && p.tarjetasLocal != "")
+                            {
+                                tarjetasLocal = Double(p.tarjetasLocal!)!
+                            }
+                            
+                            var tarjetasVisitante = 0.00
+                            if (p.tarjetasVisitante != nil && p.tarjetasVisitante != "")
+                            {
+                                tarjetasVisitante = Double(p.tarjetasVisitante!)!
+                            }
+                            
+                            if p.resultadoPartido == "TP"
+                            {
+                                np.balance = "Tarj. +" + p.tarjetasPositivo!
+                                
+                                if finalizado
+                                {
+                                    var cantidadPronosticada = 0.00
+                                    
+                                    if p.tarjetasPositivo != ""
+                                    {
+                                        cantidadPronosticada = Double(p.tarjetasPositivo!)!
+                                    }
+                                    
+                                    if (tarjetasLocal + tarjetasVisitante > cantidadPronosticada)
+                                    {
+                                        np.acertado = "1"
+                                    }
+                                    else
+                                    {
+                                        np.acertado = "0"
+                                    }
+                                    
+                                    if p.tarjetasLocal != nil
+                                    {
+                                        tarjetasPositivo.append(np)
+                                    }
+                                    
+                                }
+                            }
+                            
+                            if p.resultadoPartido == "TN"
+                            {
+                                np.balance = "Tarj. -" + p.tarjetasNegativo!
+                                
+                                if finalizado
+                                {
+                                    var cantidadPronosticada = 0.00
+                                    
+                                    if p.tarjetasNegativo != ""
+                                    {
+                                        cantidadPronosticada = Double(p.tarjetasNegativo!)!
+                                    }
+                                    
+                                    if (tarjetasLocal + tarjetasVisitante < cantidadPronosticada)
+                                    {
+                                        np.acertado = "1"
+                                    }
+                                    else
+                                    {
+                                        np.acertado = "0"
+                                    }
+                                    
+                                    if p.tarjetasLocal != nil
+                                    {
+                                        tarjetasNegativo.append(np)
+                                    }
+                                    
+                                }
+                            }
+                            
+                            
+                        }
+                        
+                        
+                        if np.tipoResPartido == "18"
+                        {
+                            np.cuota = ""
+                            
+                            
+                            var cornersFinalLocal = 0.00
+                            if (p.cornersFinalLocal != nil && p.cornersFinalLocal != "")
+                            {
+                                cornersFinalLocal = Double(p.cornersFinalLocal!)!
+                            }
+                            
+                            var cornersFinalVisitante = 0.00
+                            if (p.cornersFinalVisitante != nil && p.cornersFinalVisitante != "")
+                            {
+                                cornersFinalVisitante = Double(p.cornersFinalVisitante!)!
+                            }
+                            
+                            if p.resultadoPartido == "CP"
+                            {
+                                np.balance = "Cor. +" + p.cornersPositivo!
+                                
+                                if finalizado
+                                {
+                                    var cantidadPronosticada = 0.00
+                                    
+                                    if p.cornersPositivo != ""
+                                    {
+                                        cantidadPronosticada = Double(p.cornersPositivo!)!
+                                    }
+                                    
+                                    if (cornersFinalLocal + cornersFinalVisitante > cantidadPronosticada)
+                                    {
+                                        np.acertado = "1"
+                                    }
+                                    else
+                                    {
+                                        np.acertado = "0"
+                                    }
+                                    
+                                    if p.cornersPositivo != nil
+                                    {
+                                        cornersPositivo.append(np)
+                                    }
+                                    
+                                }
+                            }
+                            
+                            
+                            
+                            
+                        }
+                        
+                        
                         
                         
                         
@@ -752,132 +974,37 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                     
                 }//respartido
                 
-                if p.cornesNegativo != nil && p.cornesNegativo!.toInt()! > 0
-                {
-                    var np =  EstructuraEquiposPartido(equipoLocal: "", equipoVisitante: "", idPartido: "", logoLocal: "", logoVisitante: "", hora: "", balance: "", idEquipoFavorito: "", cuotaPartido: "", resultadoPartido: "", puntosResultadoPartido: "", golesAlDescanso: "", golesAlFinal: "", golesPositivo: "", golesNegativo: "", tarjetasPositivo: "", tipoResPartido: "", tarjetasNegativo: "", cornersPositivo: "", cornesNegativo: "", diferenciaExcesivaClasificacion: "", ceresultado: "", cecuota: "", limites: "", idEquipoLocal: "", idEquipoVisitante: "", poissongolesdescanso: "", poissongolesfinal: "", poissondobleoportunidad: "", poissonmarcanlosdos: "", poissoncornersdescanso: "", poissoncornesfinal: "", pais: "", idLiga: "", liga: "", probabilidad: "", pronostico: "", cuotas: "", cuota: "", golesPositivoMT: "", golesNegativoMT: "", poissongolesdescansonegativo: "", cumplioMediaGolMTLocal: "", cumplioMediaGolMTVisitante: "", tipoMT: "", localvisitante: "", mediaGolVisitanteComoVisitante: "", mediaGolhiLocalFinal: "", cumplioMediaGolVisitante: "", cumplioMediaGolLocal: "", finalLocal: "", finalVisitante: "", acertado: "", finalizado: "", admin: "")
-                    
-                    np.equipoLocal = p.equipoLocal
-                    np.equipoVisitante = p.equipoVisitante
-                    np.logoLocal = p.logoLocal
-                    np.logoVisitante = p.logoVisitante
-                    np.pais = p.pais
-                    np.liga = p.liga
-                    np.hora = p.hora
-                    np.admin = p.admin
-                    np.cuotaPartido=p.cuotaPartido
-                    np.tipoResPartido=p.tipoResPartido
-                    np.balance = "Corner: + " + p.cornesNegativo!
-                    cornersNegativo.append(np)
-                }
-                
-                
-                if p.cornersPositivo != nil && p.cornersPositivo!.toInt()! > 0
-                {
-                    var np =  EstructuraEquiposPartido(equipoLocal: "", equipoVisitante: "", idPartido: "", logoLocal: "", logoVisitante: "", hora: "", balance: "", idEquipoFavorito: "", cuotaPartido: "", resultadoPartido: "", puntosResultadoPartido: "", golesAlDescanso: "", golesAlFinal: "", golesPositivo: "", golesNegativo: "", tarjetasPositivo: "", tipoResPartido: "", tarjetasNegativo: "", cornersPositivo: "", cornesNegativo: "", diferenciaExcesivaClasificacion: "", ceresultado: "", cecuota: "", limites: "", idEquipoLocal: "", idEquipoVisitante: "", poissongolesdescanso: "", poissongolesfinal: "", poissondobleoportunidad: "", poissonmarcanlosdos: "", poissoncornersdescanso: "", poissoncornesfinal: "", pais: "", idLiga: "", liga: "", probabilidad: "", pronostico: "", cuotas: "", cuota: "", golesPositivoMT: "", golesNegativoMT: "", poissongolesdescansonegativo: "", cumplioMediaGolMTLocal: "", cumplioMediaGolMTVisitante: "", tipoMT: "", localvisitante: "", mediaGolVisitanteComoVisitante: "", mediaGolhiLocalFinal: "", cumplioMediaGolVisitante: "", cumplioMediaGolLocal: "", finalLocal: "", finalVisitante: "", acertado: "", finalizado: "", admin: "")
-                    
-                    np.equipoLocal = p.equipoLocal
-                    np.equipoVisitante = p.equipoVisitante
-                    np.logoLocal = p.logoLocal
-                    np.logoVisitante = p.logoVisitante
-                    np.pais = p.pais
-                    np.liga = p.liga
-                    np.hora = p.hora
-                    np.admin = p.admin
-                    np.cuotaPartido=p.cuotaPartido
-                    np.tipoResPartido=p.tipoResPartido
-                    np.balance = "Corner: + " + p.cornersPositivo!
-                    cornersPositivo.append(np)
-                }
-                
-              /*  if p.tarjetasNegativo != nil && p.tarjetasNegativo!.toFloat()! > 0
-                {
-                    var np =  EstructuraEquiposPartido(equipoLocal: "", equipoVisitante: "", idPartido: "", logoLocal: "", logoVisitante: "", hora: "", balance: "", idEquipoFavorito: "", cuotaPartido: "", resultadoPartido: "", puntosResultadoPartido: "", golesAlDescanso: "", golesAlFinal: "", golesPositivo: "", golesNegativo: "", tarjetasPositivo: "", tipoResPartido: "", tarjetasNegativo: "", cornersPositivo: "", cornesNegativo: "", diferenciaExcesivaClasificacion: "", ceresultado: "", cecuota: "", limites: "", idEquipoLocal: "", idEquipoVisitante: "", poissongolesdescanso: "", poissongolesfinal: "", poissondobleoportunidad: "", poissonmarcanlosdos: "", poissoncornersdescanso: "", poissoncornesfinal: "", pais: "", idLiga: "", liga: "", probabilidad: "", pronostico: "", cuotas: "", cuota: "", golesPositivoMT: "", golesNegativoMT: "", poissongolesdescansonegativo: "", cumplioMediaGolMTLocal: "", cumplioMediaGolMTVisitante: "", tipoMT: "", localvisitante: "", mediaGolVisitanteComoVisitante: "", mediaGolhiLocalFinal: "", cumplioMediaGolVisitante: "", cumplioMediaGolLocal: "", finalLocal: "", finalVisitante: "", acertado: "", finalizado: "", admin: "")
-                    
-                    np.equipoLocal = p.equipoLocal
-                    np.equipoVisitante = p.equipoVisitante
-                    np.logoLocal = p.logoLocal
-                    np.logoVisitante = p.logoVisitante
-                    np.pais = p.pais
-                    np.liga = p.liga
-                    np.hora = p.hora
-                    np.admin = p.admin
-                    np.cuotaPartido=p.cuotaPartido
-                    np.tipoResPartido=p.tipoResPartido
-                    np.balance = "Tarjeta: - " + p.tarjetasNegativo!
-                    if p.tarjetasNegativo == "2.5"
-                    {
-                        tarjetasNegativo.append(np)
-                    }
-                }*/
-                
-                if p.tarjetasPositivo != nil && p.tarjetasPositivo!.toFloat()! > 0
-                {
-                    var np =  EstructuraEquiposPartido(equipoLocal: "", equipoVisitante: "", idPartido: "", logoLocal: "", logoVisitante: "", hora: "", balance: "", idEquipoFavorito: "", cuotaPartido: "", resultadoPartido: "", puntosResultadoPartido: "", golesAlDescanso: "", golesAlFinal: "", golesPositivo: "", golesNegativo: "", tarjetasPositivo: "", tipoResPartido: "", tarjetasNegativo: "", cornersPositivo: "", cornesNegativo: "", diferenciaExcesivaClasificacion: "", ceresultado: "", cecuota: "", limites: "", idEquipoLocal: "", idEquipoVisitante: "", poissongolesdescanso: "", poissongolesfinal: "", poissondobleoportunidad: "", poissonmarcanlosdos: "", poissoncornersdescanso: "", poissoncornesfinal: "", pais: "", idLiga: "", liga: "", probabilidad: "", pronostico: "", cuotas: "", cuota: "", golesPositivoMT: "", golesNegativoMT: "", poissongolesdescansonegativo: "", cumplioMediaGolMTLocal: "", cumplioMediaGolMTVisitante: "", tipoMT: "", localvisitante: "", mediaGolVisitanteComoVisitante: "", mediaGolhiLocalFinal: "", cumplioMediaGolVisitante: "", cumplioMediaGolLocal: "", finalLocal: "", finalVisitante: "", acertado: "", finalizado: "", admin: "")
-                    
-                    np.equipoLocal = p.equipoLocal
-                    np.equipoVisitante = p.equipoVisitante
-                    np.logoLocal = p.logoLocal
-                    np.logoVisitante = p.logoVisitante
-                    np.pais = p.pais
-                    np.liga = p.liga
-                    np.hora = p.hora
-                    np.admin = p.admin
-                    np.cuotaPartido=p.cuotaPartido
-                    np.tipoResPartido=p.tipoResPartido
-                    np.balance = "Tarjeta: + " + p.tarjetasPositivo!
-                    if p.tarjetasPositivo == "3.5" || p.tarjetasPositivo == "4.5" || p.tarjetasPositivo == "5.5"
-                    {
-                        tarjetasPositivo.append(np)
-                    }
-                }
                 
                 
                 
-                if p.golesPositivo != nil && p.golesPositivo!.toFloat()! > 0
-                {
-                    var np =  EstructuraEquiposPartido(equipoLocal: "", equipoVisitante: "", idPartido: "", logoLocal: "", logoVisitante: "", hora: "", balance: "", idEquipoFavorito: "", cuotaPartido: "", resultadoPartido: "", puntosResultadoPartido: "", golesAlDescanso: "", golesAlFinal: "", golesPositivo: "", golesNegativo: "", tarjetasPositivo: "", tipoResPartido: "", tarjetasNegativo: "", cornersPositivo: "", cornesNegativo: "", diferenciaExcesivaClasificacion: "", ceresultado: "", cecuota: "", limites: "", idEquipoLocal: "", idEquipoVisitante: "", poissongolesdescanso: "", poissongolesfinal: "", poissondobleoportunidad: "", poissonmarcanlosdos: "", poissoncornersdescanso: "", poissoncornesfinal: "", pais: "", idLiga: "", liga: "", probabilidad: "", pronostico: "", cuotas: "", cuota: "", golesPositivoMT: "", golesNegativoMT: "", poissongolesdescansonegativo: "", cumplioMediaGolMTLocal: "", cumplioMediaGolMTVisitante: "", tipoMT: "", localvisitante: "", mediaGolVisitanteComoVisitante: "", mediaGolhiLocalFinal: "", cumplioMediaGolVisitante: "", cumplioMediaGolLocal: "", finalLocal: "", finalVisitante: "", acertado: "", finalizado: "", admin: "")
-                    
-                    np.equipoLocal = p.equipoLocal
-                    np.equipoVisitante = p.equipoVisitante
-                    np.logoLocal = p.logoLocal
-                    np.logoVisitante = p.logoVisitante
-                    np.pais = p.pais
-                    np.liga = p.liga
-                    np.hora = p.hora
-                    np.admin = p.admin
-                    np.cuotaPartido=p.cuotaPartido
-                    np.tipoResPartido=p.tipoResPartido
-                    np.balance = "Gol: + " + p.golesPositivo!
-                    for c in cuotas
-                    {
-                        if c.pronostico == "+"+p.golesPositivo! || c.pronostico == "+" + p.golesPositivo!+".5"
-                        {
-                            np.cuota = c.cuota
-                        }
-                    }
-                    if p.golesPositivo != nil && p.golesPositivo != "2.5"
-                    {
-                        if validarCuota(cuota: np.cuota!)
-                        {
-                            if p.golesPositivo! == "1.5"
-                            {
-                                if finalLocal + finalVisitante > 1
-                                {
-                                    np.acertado="1"
-                                }
-                            }
-                            conCuota.append(np)
-                        }
-                        else
-                        {
-                            golesPositivo.append(np)
-                        }
-                    }
                 
-                }
-             
+                
+                
+                
             }
         }
+        
+        
+         conCuota.sort(by: sortPorCuota)
+        
+        rp1.sort(by: sortPorCuota)
+        rp2.sort(by: sortPorCuota)
+        rp3.sort(by: sortPorCuota)
+        rp4.sort(by: sortPorCuota)
+        rp5.sort(by: sortPorCuota)
+        rp6.sort(by: sortPorCuota)
+        rp7.sort(by: sortPorCuota)
+        rp8.sort(by: sortPorCuota)
+        rp9.sort(by: sortPorCuota)
+        rp10.sort(by: sortPorCuota)
+        rp11.sort(by: sortPorCuota)
+        rp12.sort(by: sortPorCuota)
+        rp13.sort(by: sortPorCuota)
+        rp14.sort(by: sortPorCuota)
+        rp1405.sort(by: sortPorCuota)
+        rp15.sort(by: sortPorCuota)
+        rp16.sort(by: sortPorCuota)
+        
         
         balances.append(contentsOf: rp13)
         balances.append(contentsOf: rp14)
@@ -898,10 +1025,28 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
         balances.append(contentsOf: conCuota)
         balances.append(contentsOf: tarjetasNegativo)
         balances.append(contentsOf: tarjetasPositivo)
-        balances.append(contentsOf: cornersNegativo)
+        
         balances.append(contentsOf: cornersPositivo)
+        balances.append(contentsOf: rp1405)
         
     }
+    
+    func sortPorCuota(this:EstructuraEquiposPartido, that:EstructuraEquiposPartido) -> Bool {
+             var ti = 0.00
+              if (this.cuota != nil && this.cuota! != "")
+              {
+                   ti = this.cuota!.toDouble()!
+              }
+              
+              var ta = 0.00
+              if (that.cuota != nil && that.cuota! != "")
+              {
+                   ta = that.cuota!.toDouble()!
+              }
+              
+              
+                  return ti > ta
+          }
     
     func  validarCuota ( cuota : String) -> Bool
     {

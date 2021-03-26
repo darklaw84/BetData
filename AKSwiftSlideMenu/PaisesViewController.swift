@@ -12,6 +12,9 @@ var menos35 = [EstructuraEquiposPartido]()
 var doble1X = [EstructuraEquiposPartido]()
 var doble12 = [EstructuraEquiposPartido]()
 var dobleX2 = [EstructuraEquiposPartido]()
+
+
+
 var paises = [EstructuraEquiposPartido]()
 var partidos = [EstructuraEquiposPartido]()
 var fechaActual = ""
@@ -175,7 +178,7 @@ class PaisesViewController: BaseViewController,UITableViewDelegate,UITableViewDa
     func obtenerDatos()
     {
         
-        
+         todos = [EstructuraEquiposPartido]()
         
         let date = Date()
         let formatter = DateFormatter()
@@ -257,42 +260,40 @@ class PaisesViewController: BaseViewController,UITableViewDelegate,UITableViewDa
         }.resume()
         
         
-        
+
         let mas15Url = String(ut.obtenerUrlServicios() + "obtenerPartidosMas15.php")
-        let mas15serviceUrl = URL(string: mas15Url)!
-        let mas15parameters: [String: Any] = [
-            "fecha" : fechaActual,
-            "token": token!,
-            "idUsuario": idUsuario!
-        ]
+                   let mas15serviceUrl = URL(string: mas15Url)!
+                   let mas15parameters: [String: Any] = [
+                       "fecha" : fechaActual,
+                       "token": token!,
+                       "idUsuario": idUsuario!
+                   ]
+                   
+                   var mas15request = URLRequest(url: mas15serviceUrl)
+                          mas15request.httpMethod = "POST"
+                          mas15request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
+                          let mas15httpBody = try? JSONSerialization.data(withJSONObject: mas15parameters, options: [])
+                          mas15request.httpBody = mas15httpBody
+                          mas15request.timeoutInterval = 20
+                          let mas15session = URLSession.shared
+                          
+                          
+                          mas15session.dataTask(with: mas15request) { (data, response, error) in
+                              
+                              if let data = data {
+                                  do {
+                                      mas15 = try  JSONDecoder().decode(RespuestaPartidos.self,from: data ).datos
+                                      
+                                      
+                                  } catch {
+                                      print(error)
+                                  }
+                              }
+                          }.resume()
+                   
+
         
-        var mas15request = URLRequest(url: mas15serviceUrl)
-        mas15request.httpMethod = "POST"
-        mas15request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
-        let mas15httpBody = try? JSONSerialization.data(withJSONObject: mas15parameters, options: [])
-        mas15request.httpBody = mas15httpBody
-        mas15request.timeoutInterval = 20
-        let mas15session = URLSession.shared
-        
-        
-        mas15session.dataTask(with: mas15request) { (data, response, error) in
-            
-            if let data = data {
-                do {
-                    mas15 = try  JSONDecoder().decode(RespuestaPartidos.self,from: data ).datos
-                    
-                    
-                } catch {
-                    print(error)
-                }
-            }
-        }.resume()
-        
-        
-        
-        
-        
-        
+      
         
         let menos35Url = String(ut.obtenerUrlServicios() + "obtenerPartidosMenos35.php")
         let menos35serviceUrl = URL(string: menos35Url)!
@@ -394,35 +395,36 @@ class PaisesViewController: BaseViewController,UITableViewDelegate,UITableViewDa
         
         
         
+        
         let dobleX2Url = String(ut.obtenerUrlServicios() + "obtenerPartidosPorDiaX2.php")
-               let dobleX2serviceUrl = URL(string: dobleX2Url)!
-               let dobleX2parameters: [String: Any] = [
-                   "fecha" : fechaActual,
-                   "token": token!,
-                   "idUsuario": idUsuario!
-               ]
-               
-               var dobleX2request = URLRequest(url: dobleX2serviceUrl)
-               dobleX2request.httpMethod = "POST"
-               dobleX2request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
-               let dobleX2httpBody = try? JSONSerialization.data(withJSONObject: dobleX2parameters, options: [])
-               dobleX2request.httpBody = dobleX2httpBody
-               dobleX2request.timeoutInterval = 20
-               let dobleX2session = URLSession.shared
-               
-               
-               dobleX2session.dataTask(with: dobleX2request) { (data, response, error) in
-                   
-                   if let data = data {
-                       do {
-                           dobleX2 = try  JSONDecoder().decode(RespuestaPartidos.self,from: data ).datos
-                           
-                           
-                       } catch {
-                           print(error)
-                       }
-                   }
-               }.resume()
+        let dobleX2serviceUrl = URL(string: dobleX2Url)!
+        let dobleX2parameters: [String: Any] = [
+            "fecha" : fechaActual,
+            "token": token!,
+            "idUsuario": idUsuario!
+        ]
+        
+        var dobleX2request = URLRequest(url: dobleX2serviceUrl)
+        dobleX2request.httpMethod = "POST"
+        dobleX2request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
+        let dobleX2httpBody = try? JSONSerialization.data(withJSONObject: dobleX2parameters, options: [])
+        dobleX2request.httpBody = dobleX2httpBody
+        dobleX2request.timeoutInterval = 20
+        let dobleX2session = URLSession.shared
+        
+        
+        dobleX2session.dataTask(with: dobleX2request) { (data, response, error) in
+            
+            if let data = data {
+                do {
+                    dobleX2 = try  JSONDecoder().decode(RespuestaPartidos.self,from: data ).datos
+                    
+                    
+                } catch {
+                    print(error)
+                }
+            }
+        }.resume()
         
         
     }

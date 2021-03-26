@@ -24,12 +24,26 @@ class VistaPartidoViewController : UIViewController {
     @IBOutlet weak var lblResVisitante: UILabel!
     @IBOutlet weak var lblResLocal: UILabel!
     @IBOutlet weak var lblNombrePais: UILabel!
+    
+    
+    
+    @IBOutlet weak var lblTarjetasVisitante: UILabel!
+    @IBOutlet weak var lblTarjetasLocal: UILabel!
+    
+    @IBOutlet weak var lblCornersLocal: UILabel!
+    
+    
+    @IBOutlet weak var lblCornersVisitante: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
         var finalLocal = "-"
         var finalVisitante = "-"
+        var tarjetasLocal = "-"
+        var tarjetasVisitante = "-"
+        var cornersLocal = "-"
+        var cornersVisitante = "-"
         
         
         
@@ -55,10 +69,30 @@ class VistaPartidoViewController : UIViewController {
                 {
                     finalVisitante = balances[indexBalanceSelected].finalVisitante!
                 }
+                if balances[indexBalanceSelected].tarjetasLocal != nil
+                {
+                    tarjetasLocal = balances[indexBalanceSelected].tarjetasLocal!
+                }
+                if balances[indexBalanceSelected].tarjetasVisitante != nil
+                {
+                    tarjetasVisitante = balances[indexBalanceSelected].tarjetasVisitante!
+                }
+                if balances[indexBalanceSelected].cornersFinalLocal != nil
+                {
+                    cornersLocal = balances[indexBalanceSelected].cornersFinalLocal!
+                }
+                if balances[indexBalanceSelected].cornersFinalVisitante != nil
+                {
+                    cornersVisitante = balances[indexBalanceSelected].cornersFinalVisitante!
+                }
             }
             
             lblResLocal.text = finalLocal
             lblResVisitante.text = finalVisitante
+            lblCornersLocal.text = cornersLocal
+            lblCornersVisitante.text = cornersVisitante
+            lblTarjetasLocal.text = tarjetasLocal
+            lblTarjetasVisitante.text = tarjetasVisitante
             
             if balances[indexBalanceSelected].equipoLocal != nil
             {
@@ -161,10 +195,30 @@ class VistaPartidoViewController : UIViewController {
                 {
                     finalVisitante = locos[indexApuestaLocaSelected].finalVisitante!
                 }
+                if locos[indexBalanceSelected].tarjetasLocal != nil
+                {
+                    tarjetasLocal = locos[indexBalanceSelected].tarjetasLocal!
+                }
+                if locos[indexBalanceSelected].tarjetasVisitante != nil
+                {
+                    tarjetasVisitante = locos[indexBalanceSelected].tarjetasVisitante!
+                }
+                if locos[indexBalanceSelected].cornersFinalLocal != nil
+                {
+                    cornersLocal = locos[indexBalanceSelected].cornersFinalLocal!
+                }
+                if locos[indexBalanceSelected].cornersFinalVisitante != nil
+                {
+                    cornersVisitante = locos[indexBalanceSelected].cornersFinalVisitante!
+                }
             }
             
             lblResLocal.text = finalLocal
             lblResVisitante.text = finalVisitante
+            lblCornersLocal.text = cornersLocal
+            lblCornersVisitante.text =  cornersVisitante
+            lblTarjetasLocal.text = tarjetasLocal
+            lblTarjetasVisitante.text = tarjetasVisitante
             
             
             if locos[indexApuestaLocaSelected].equipoLocal != nil
@@ -267,10 +321,30 @@ class VistaPartidoViewController : UIViewController {
                 {
                     finalVisitante = eventos[indexEventosSelected].finalVisitante!
                 }
+                if eventos[indexBalanceSelected].tarjetasLocal != nil
+                {
+                    tarjetasLocal = eventos[indexBalanceSelected].tarjetasLocal!
+                }
+                if eventos[indexBalanceSelected].tarjetasVisitante != nil
+                {
+                    tarjetasVisitante = eventos[indexBalanceSelected].tarjetasVisitante!
+                }
+                if eventos[indexBalanceSelected].cornersFinalLocal != nil
+                {
+                    cornersLocal = eventos[indexBalanceSelected].cornersFinalLocal!
+                }
+                if eventos[indexBalanceSelected].cornersFinalVisitante != nil
+                {
+                    cornersVisitante = eventos[indexBalanceSelected].cornersFinalVisitante!
+                }
             }
             
             lblResLocal.text = finalLocal
             lblResVisitante.text = finalVisitante
+            lblCornersLocal.text = cornersLocal
+            lblCornersVisitante.text = cornersVisitante
+            lblTarjetasLocal.text = tarjetasLocal
+            lblTarjetasVisitante.text = tarjetasVisitante
             
             if eventos[indexEventosSelected].equipoLocal != nil
             {

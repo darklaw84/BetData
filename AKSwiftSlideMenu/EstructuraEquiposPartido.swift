@@ -65,7 +65,11 @@ public struct EstructuraEquiposPartido:Decodable
     var acertado:String?
     var finalizado:String?
     var admin:String?
-  
+    var tarjetasLocal:String?
+    var tarjetasVisitante:String?
+    var cornersFinalLocal:String?
+    var cornersFinalVisitante:String?
+    
     
     
 }

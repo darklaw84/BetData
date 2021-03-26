@@ -61,6 +61,7 @@ class CalendarViewController : BaseViewController
     
     func obtenerDatosAsync()
     {
+         todos = [EstructuraEquiposPartido]()
         
         DispatchQueue.main.async {
             
@@ -177,37 +178,7 @@ class CalendarViewController : BaseViewController
             
             
             
-            let mas15Url = String(ut.obtenerUrlServicios() + "obtenerPartidosMas15.php")
-                          let mas15serviceUrl = URL(string: mas15Url)!
-                          let mas15parameters: [String: Any] = [
-                              "fecha" : fechaActual,
-                              "token": token!,
-                              "idUsuario": idUsuario!
-                          ]
-                          
-                          var mas15request = URLRequest(url: mas15serviceUrl)
-                          mas15request.httpMethod = "POST"
-                          mas15request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
-                          let mas15httpBody = try? JSONSerialization.data(withJSONObject: mas15parameters, options: [])
-                          mas15request.httpBody = mas15httpBody
-                          mas15request.timeoutInterval = 20
-                          let mas15session = URLSession.shared
-                          
-                          
-                          mas15session.dataTask(with: mas15request) { (data, response, error) in
-                              
-                              if let data = data {
-                                  do {
-                                      mas15 = try  JSONDecoder().decode(RespuestaPartidos.self,from: data ).datos
-                                      
-                                      
-                                  } catch {
-                                      print(error)
-                                  }
-                              }
-                          }.resume()
-            
-            
+           
             let menos35Url = String(ut.obtenerUrlServicios() + "obtenerPartidosMenos35.php")
             let menos35serviceUrl = URL(string: menos35Url)!
             let menos35parameters: [String: Any] = [
@@ -240,6 +211,40 @@ class CalendarViewController : BaseViewController
             
             
             
+            
+            let mas15Url = String(ut.obtenerUrlServicios() + "obtenerPartidosMas15.php")
+                       let mas15serviceUrl = URL(string: mas15Url)!
+                       let mas15parameters: [String: Any] = [
+                           "fecha" : fechaActual,
+                           "token": token!,
+                           "idUsuario": idUsuario!
+                       ]
+                       
+                       var mas15request = URLRequest(url: mas15serviceUrl)
+                              mas15request.httpMethod = "POST"
+                              mas15request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
+                              let mas15httpBody = try? JSONSerialization.data(withJSONObject: mas15parameters, options: [])
+                              mas15request.httpBody = mas15httpBody
+                              mas15request.timeoutInterval = 20
+                              let mas15session = URLSession.shared
+                              
+                              
+                              mas15session.dataTask(with: mas15request) { (data, response, error) in
+                                  
+                                  if let data = data {
+                                      do {
+                                          mas15 = try  JSONDecoder().decode(RespuestaPartidos.self,from: data ).datos
+                                          
+                                          
+                                      } catch {
+                                          print(error)
+                                      }
+                                  }
+                              }.resume()
+                       
+
+            
+           
 
             
             let doble1XUrl = String(ut.obtenerUrlServicios() + "obtenerPartidosPorDia1X.php")

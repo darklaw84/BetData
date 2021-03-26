@@ -26,112 +26,112 @@ class EventosViewController: BaseViewController,UITableViewDelegate,UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let ut = Utils()
-           let cell = Bundle.main.loadNibNamed("BalancesTVCTableViewCell", owner: self, options: nil)?.first as! BalancesTVCTableViewCell
-             
-             cell.txtLiga.text=eventos[indexPath.row].liga
-             var equipoLocal = ""
-             if eventos[indexPath.row].equipoLocal == nil
-             {
-                 equipoLocal = ""
-             }
-             else
-             {
-                 equipoLocal = eventos[indexPath.row].equipoLocal!
-             }
-             var equipoVisitante = ""
-             if eventos[indexPath.row].equipoVisitante == nil
-             {
-                 equipoVisitante = ""
-             }
-             else
-             {
-                 equipoVisitante = eventos[indexPath.row].equipoVisitante!
-             }
-             cell.txtPartido.text = equipoLocal + " - " + equipoVisitante
-             cell.imgBandera.image = UIImage(named: eventos[indexPath.row].pais!+".png")
-             cell.txtBalance.text = eventos[indexPath.row].balance
-             
-             if eventos[indexPath.row].cuotaPartido != nil
-             {
-                 cell.txtCuota.text = eventos[indexPath.row].cuotaPartido
-             }
-             else
-             {
-                 if eventos[indexPath.row].cuota != nil
-                 {
-                     cell.txtCuota.text = eventos[indexPath.row].cuota
-                 }
-                 else
-                 {
-                     cell.txtCuota.text = ""
-                 }
-             }
-             
-             
-             if indexPath.row % 2 == 0
-             {
-                 cell.backgroundColor = ut.colorUIHex(hex: "F6F3F0")
-                 cell.txtLiga.backgroundColor=ut.colorUIHex(hex: "F6F3F0")
-                 cell.txtPartido.backgroundColor=ut.colorUIHex(hex: "F6F3F0")
-                 cell.txtBalance.backgroundColor=ut.colorUIHex(hex: "F6F3F0")
-                 cell.txtCuota.backgroundColor=ut.colorUIHex(hex: "F6F3F0")
-             }
-             else
-             {
-                 cell.backgroundColor = ut.colorUIHex(hex: "FFFFFF")
-             }
-             
-             let admin = eventos[indexPath.row].admin
-             let tipoRes = eventos[indexPath.row].tipoResPartido
-             if admin != nil && admin == "1"
-             {
-                 
-                 if tipoRes != nil && tipoRes != ""
-                 {
-                     cell.backgroundColor = ut.colorUIHex(hex: obtenerColorTipoResPartido(tipoResPartido: tipoRes!))
-                     cell.txtLiga.backgroundColor=ut.colorUIHex(hex: obtenerColorTipoResPartido(tipoResPartido: tipoRes!))
-                     cell.txtPartido.backgroundColor=ut.colorUIHex(hex: obtenerColorTipoResPartido(tipoResPartido: tipoRes!))
-                     cell.txtBalance.backgroundColor=ut.colorUIHex(hex: obtenerColorTipoResPartido(tipoResPartido: tipoRes!))
-                     cell.txtCuota.backgroundColor=ut.colorUIHex(hex: obtenerColorTipoResPartido(tipoResPartido: tipoRes!))
-                     cell.txtLiga.textColor=ut.colorUIHex(hex: obtenerColorTexto(tipoResPartido: tipoRes!))
-                     cell.txtPartido.textColor=ut.colorUIHex(hex: obtenerColorTexto(tipoResPartido: tipoRes!))
-                     cell.txtBalance.textColor=ut.colorUIHex(hex: obtenerColorTexto(tipoResPartido: tipoRes!))
-                     cell.txtCuota.textColor=ut.colorUIHex(hex: obtenerColorTexto(tipoResPartido: tipoRes!))
-                     
-                 }
-             }
-             else
-             {
-                 if tipoRes != nil && tipoRes != ""
-                 {
-                     cell.backgroundColor = ut.colorUIHex(hex:"CBFDC8")
-                     cell.txtLiga.backgroundColor=ut.colorUIHex(hex:"CBFDC8")
-                     cell.txtPartido.backgroundColor=ut.colorUIHex(hex:"CBFDC8")
-                     cell.txtBalance.backgroundColor=ut.colorUIHex(hex:"CBFDC8")
-                     cell.txtCuota.backgroundColor=ut.colorUIHex(hex:"CBFDC8")
-                     cell.txtLiga.textColor=ut.colorUIHex(hex:"000000")
-                     cell.txtPartido.textColor=ut.colorUIHex(hex:"000000")
-                     cell.txtBalance.textColor=ut.colorUIHex(hex:"000000")
-                     cell.txtCuota.textColor=ut.colorUIHex(hex:"000000")
-                 }
-             }
-             
-             let acertado = eventos[indexPath.row].acertado
-             
-             if acertado != nil && acertado == "1"
-             {
-                 cell.imgAcertado.isHidden = false
-             }
-             else if acertado != nil && acertado == "N"
-             {
-                 cell.imgAcertado.isHidden = false
-                 cell.imgAcertado.image = UIImage(named: "nulo.png")
-             }
-             else
-             {
-                 cell.imgAcertado.isHidden = true
-                 
-             }
+        let cell = Bundle.main.loadNibNamed("BalancesTVCTableViewCell", owner: self, options: nil)?.first as! BalancesTVCTableViewCell
+        
+        cell.txtLiga.text=eventos[indexPath.row].liga
+        var equipoLocal = ""
+        if eventos[indexPath.row].equipoLocal == nil
+        {
+            equipoLocal = ""
+        }
+        else
+        {
+            equipoLocal = eventos[indexPath.row].equipoLocal!
+        }
+        var equipoVisitante = ""
+        if eventos[indexPath.row].equipoVisitante == nil
+        {
+            equipoVisitante = ""
+        }
+        else
+        {
+            equipoVisitante = eventos[indexPath.row].equipoVisitante!
+        }
+        cell.txtPartido.text = equipoLocal + " - " + equipoVisitante
+        cell.imgBandera.image = UIImage(named: eventos[indexPath.row].pais!+".png")
+        cell.txtBalance.text = eventos[indexPath.row].balance
+        
+        if eventos[indexPath.row].cuotaPartido != nil
+        {
+            cell.txtCuota.text = eventos[indexPath.row].cuotaPartido
+        }
+        else
+        {
+            if eventos[indexPath.row].cuota != nil
+            {
+                cell.txtCuota.text = eventos[indexPath.row].cuota
+            }
+            else
+            {
+                cell.txtCuota.text = ""
+            }
+        }
+        
+        
+        if indexPath.row % 2 == 0
+        {
+            cell.backgroundColor = ut.colorUIHex(hex: "F6F3F0")
+            cell.txtLiga.backgroundColor=ut.colorUIHex(hex: "F6F3F0")
+            cell.txtPartido.backgroundColor=ut.colorUIHex(hex: "F6F3F0")
+            cell.txtBalance.backgroundColor=ut.colorUIHex(hex: "F6F3F0")
+            cell.txtCuota.backgroundColor=ut.colorUIHex(hex: "F6F3F0")
+        }
+        else
+        {
+            cell.backgroundColor = ut.colorUIHex(hex: "FFFFFF")
+        }
+        
+        let admin = eventos[indexPath.row].admin
+        let tipoRes = eventos[indexPath.row].tipoResPartido
+        if admin != nil && admin == "1"
+        {
+            
+            if tipoRes != nil && tipoRes != ""
+            {
+                cell.backgroundColor = ut.colorUIHex(hex: obtenerColorTipoResPartido(tipoResPartido: tipoRes!))
+                cell.txtLiga.backgroundColor=ut.colorUIHex(hex: obtenerColorTipoResPartido(tipoResPartido: tipoRes!))
+                cell.txtPartido.backgroundColor=ut.colorUIHex(hex: obtenerColorTipoResPartido(tipoResPartido: tipoRes!))
+                cell.txtBalance.backgroundColor=ut.colorUIHex(hex: obtenerColorTipoResPartido(tipoResPartido: tipoRes!))
+                cell.txtCuota.backgroundColor=ut.colorUIHex(hex: obtenerColorTipoResPartido(tipoResPartido: tipoRes!))
+                cell.txtLiga.textColor=ut.colorUIHex(hex: obtenerColorTexto(tipoResPartido: tipoRes!))
+                cell.txtPartido.textColor=ut.colorUIHex(hex: obtenerColorTexto(tipoResPartido: tipoRes!))
+                cell.txtBalance.textColor=ut.colorUIHex(hex: obtenerColorTexto(tipoResPartido: tipoRes!))
+                cell.txtCuota.textColor=ut.colorUIHex(hex: obtenerColorTexto(tipoResPartido: tipoRes!))
+                
+            }
+        }
+        else
+        {
+            if tipoRes != nil && tipoRes != ""
+            {
+                cell.backgroundColor = ut.colorUIHex(hex:"CBFDC8")
+                cell.txtLiga.backgroundColor=ut.colorUIHex(hex:"CBFDC8")
+                cell.txtPartido.backgroundColor=ut.colorUIHex(hex:"CBFDC8")
+                cell.txtBalance.backgroundColor=ut.colorUIHex(hex:"CBFDC8")
+                cell.txtCuota.backgroundColor=ut.colorUIHex(hex:"CBFDC8")
+                cell.txtLiga.textColor=ut.colorUIHex(hex:"000000")
+                cell.txtPartido.textColor=ut.colorUIHex(hex:"000000")
+                cell.txtBalance.textColor=ut.colorUIHex(hex:"000000")
+                cell.txtCuota.textColor=ut.colorUIHex(hex:"000000")
+            }
+        }
+        
+        let acertado = eventos[indexPath.row].acertado
+        
+        if acertado != nil && acertado == "1"
+        {
+            cell.imgAcertado.isHidden = false
+        }
+        else if acertado != nil && acertado == "N"
+        {
+            cell.imgAcertado.isHidden = false
+            cell.imgAcertado.image = UIImage(named: "nulo.png")
+        }
+        else
+        {
+            cell.imgAcertado.isHidden = true
+            
+        }
         
         
         
@@ -139,87 +139,87 @@ class EventosViewController: BaseViewController,UITableViewDelegate,UITableViewD
     }
     
     func obtenerColorTexto(tipoResPartido: String )->String
-       {
-           var color = ""
-           
-           if tipoResPartido.toInt()! <= 8 || tipoResPartido.toInt()! == 13 || tipoResPartido.toInt()! == 14
-               || tipoResPartido.toInt()! == 15 || tipoResPartido.toInt()! == 16
-           {
-               color = "000000"
-           }
-           else
-           {
-               color = "FFFFFF"
-           }
-           return color
-       }
-       
-       func obtenerColorTipoResPartido (tipoResPartido: String) -> String
-       {
-           var color = "FFFFFF"
-           
-           if tipoResPartido == "1"
-           {
-               color = "ADD6FE"
-           }
-           else if tipoResPartido == "2"
-           {
-               color = "EAADFE"
-           }
-           else if tipoResPartido == "3"
-           {
-               color = "FD78D9"
-           }
-           else if tipoResPartido == "4"
-           {
-               color = "FEFE5E"
-           }
-           else if tipoResPartido == "5"
-           {
-               color = "AEFDA4"
-           }
-           else if tipoResPartido == "6"
-           {
-               color = "FF3434"
-           }
-           else if tipoResPartido == "7"
-           {
-               color = "FF9634"
-           }
-           else if tipoResPartido == "8"
-           {
-               color = "D1B193"
-           }
-           else if tipoResPartido == "9"
-           {
-               color = "B0192D"
-           }
-           else if tipoResPartido == "10"
-           {
-               color = "4E4BA7"
-           }
-           else if tipoResPartido == "11"
-           {
-               color = "0B6011"
-           }
-           else if tipoResPartido == "12"
-           {
-               color = "4A057D"
-           }
-           else if tipoResPartido == "13"
-           {
-               color = "F7C406"
-           }
-           else if tipoResPartido == "14"
-           {
-               color = "F7C406"
-           }
-           else if tipoResPartido == "15"
-           {
-               color = "F7C406"
-           }
-           return color
-       }
+    {
+        var color = ""
+        
+        if tipoResPartido.toInt()! <= 8 || tipoResPartido.toInt()! == 13 || tipoResPartido.toInt()! == 14
+            || tipoResPartido.toInt()! == 15 || tipoResPartido.toInt()! == 16
+        {
+            color = "000000"
+        }
+        else
+        {
+            color = "FFFFFF"
+        }
+        return color
+    }
+    
+    func obtenerColorTipoResPartido (tipoResPartido: String) -> String
+    {
+        var color = "FFFFFF"
+        
+        if tipoResPartido == "1"
+        {
+            color = "ADD6FE"
+        }
+        else if tipoResPartido == "2"
+        {
+            color = "EAADFE"
+        }
+        else if tipoResPartido == "3"
+        {
+            color = "FD78D9"
+        }
+        else if tipoResPartido == "4"
+        {
+            color = "FEFE5E"
+        }
+        else if tipoResPartido == "5"
+        {
+            color = "AEFDA4"
+        }
+        else if tipoResPartido == "6"
+        {
+            color = "FF3434"
+        }
+        else if tipoResPartido == "7"
+        {
+            color = "FF9634"
+        }
+        else if tipoResPartido == "8"
+        {
+            color = "D1B193"
+        }
+        else if tipoResPartido == "9"
+        {
+            color = "B0192D"
+        }
+        else if tipoResPartido == "10"
+        {
+            color = "4E4BA7"
+        }
+        else if tipoResPartido == "11"
+        {
+            color = "0B6011"
+        }
+        else if tipoResPartido == "12"
+        {
+            color = "4A057D"
+        }
+        else if tipoResPartido == "13"
+        {
+            color = "F7C406"
+        }
+        else if tipoResPartido == "14"
+        {
+            color = "F7C406"
+        }
+        else if tipoResPartido == "15"
+        {
+            color = "F7C406"
+        }
+        return color
+    }
     
     
     override func viewDidLoad() {
@@ -310,7 +310,7 @@ class EventosViewController: BaseViewController,UITableViewDelegate,UITableViewD
                     
                     for c in cuotas
                     {
-                        if c.pronostico == np.pronostico
+                        if c.pronostico == p.resultadoPartido
                         {
                             np.cuota = c.cuota
                             break;
@@ -352,10 +352,10 @@ class EventosViewController: BaseViewController,UITableViewDelegate,UITableViewD
                             np.acertado = "0"
                         }
                     }
-                 //   if np.cuota != nil && np.cuota != ""
-                   // {
-                        eventos.append(np)
-                   // }
+                    //   if np.cuota != nil && np.cuota != ""
+                    // {
+                    eventos.append(np)
+                    // }
                     
                 }
                 
@@ -365,14 +365,29 @@ class EventosViewController: BaseViewController,UITableViewDelegate,UITableViewD
         
         
         
-       // eventos.sort(by: sortEventos)
+        eventos.sort(by: sortEventos)
         
         
         
     }
     
     func sortEventos(this:EstructuraEquiposPartido, that:EstructuraEquiposPartido) -> Bool {
-        return this.cuota!.toDouble()! > that.cuota!.toDouble()!
+        
+        
+        var ti = 0.00
+        if (this.cuota != nil && this.cuota! != "")
+        {
+             ti = this.cuota!.toDouble()!
+        }
+        
+        var ta = 0.00
+        if (that.cuota != nil && that.cuota! != "")
+        {
+             ta = that.cuota!.toDouble()!
+        }
+        
+        
+            return ti > ta
     }
     
     
