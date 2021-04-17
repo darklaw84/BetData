@@ -195,21 +195,21 @@ class VistaPartidoViewController : UIViewController {
                 {
                     finalVisitante = locos[indexApuestaLocaSelected].finalVisitante!
                 }
-                if locos[indexBalanceSelected].tarjetasLocal != nil
+                if locos[indexApuestaLocaSelected].tarjetasLocal != nil
                 {
-                    tarjetasLocal = locos[indexBalanceSelected].tarjetasLocal!
+                    tarjetasLocal = locos[indexApuestaLocaSelected].tarjetasLocal!
                 }
-                if locos[indexBalanceSelected].tarjetasVisitante != nil
+                if locos[indexApuestaLocaSelected].tarjetasVisitante != nil
                 {
-                    tarjetasVisitante = locos[indexBalanceSelected].tarjetasVisitante!
+                    tarjetasVisitante = locos[indexApuestaLocaSelected].tarjetasVisitante!
                 }
-                if locos[indexBalanceSelected].cornersFinalLocal != nil
+                if locos[indexApuestaLocaSelected].cornersFinalLocal != nil
                 {
-                    cornersLocal = locos[indexBalanceSelected].cornersFinalLocal!
+                    cornersLocal = locos[indexApuestaLocaSelected].cornersFinalLocal!
                 }
-                if locos[indexBalanceSelected].cornersFinalVisitante != nil
+                if locos[indexApuestaLocaSelected].cornersFinalVisitante != nil
                 {
-                    cornersVisitante = locos[indexBalanceSelected].cornersFinalVisitante!
+                    cornersVisitante = locos[indexApuestaLocaSelected].cornersFinalVisitante!
                 }
             }
             
@@ -321,21 +321,21 @@ class VistaPartidoViewController : UIViewController {
                 {
                     finalVisitante = eventos[indexEventosSelected].finalVisitante!
                 }
-                if eventos[indexBalanceSelected].tarjetasLocal != nil
+                if eventos[indexEventosSelected].tarjetasLocal != nil
                 {
-                    tarjetasLocal = eventos[indexBalanceSelected].tarjetasLocal!
+                    tarjetasLocal = eventos[indexEventosSelected].tarjetasLocal!
                 }
-                if eventos[indexBalanceSelected].tarjetasVisitante != nil
+                if eventos[indexEventosSelected].tarjetasVisitante != nil
                 {
-                    tarjetasVisitante = eventos[indexBalanceSelected].tarjetasVisitante!
+                    tarjetasVisitante = eventos[indexEventosSelected].tarjetasVisitante!
                 }
-                if eventos[indexBalanceSelected].cornersFinalLocal != nil
+                if eventos[indexEventosSelected].cornersFinalLocal != nil
                 {
-                    cornersLocal = eventos[indexBalanceSelected].cornersFinalLocal!
+                    cornersLocal = eventos[indexEventosSelected].cornersFinalLocal!
                 }
-                if eventos[indexBalanceSelected].cornersFinalVisitante != nil
+                if eventos[indexEventosSelected].cornersFinalVisitante != nil
                 {
-                    cornersVisitante = eventos[indexBalanceSelected].cornersFinalVisitante!
+                    cornersVisitante = eventos[indexEventosSelected].cornersFinalVisitante!
                 }
             }
             

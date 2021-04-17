@@ -20,7 +20,7 @@
             landmarkType = "3">
             <Locations>
                <Location
-                  uuid = "295FEEBB-B670-402F-A202-37A0D4B186EA - ccb5f3f793e9a6ad"
+                  uuid = "295FEEBB-B670-402F-A202-37A0D4B186EA - 6449f05d00903058"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -35,7 +35,7 @@
                   offsetFromSymbolStart = "144">
                </Location>
                <Location
-                  uuid = "295FEEBB-B670-402F-A202-37A0D4B186EA - 2f136f64931f4a17"
+                  uuid = "295FEEBB-B670-402F-A202-37A0D4B186EA - 87ef6cce0066dd20"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -212,7 +212,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "1A4C2D91-1713-419A-8F98-2E118A90D4B3 - 50b8f50b969e53ca"
+                  uuid = "1A4C2D91-1713-419A-8F98-2E118A90D4B3 - 1e382194e149516e"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -227,7 +227,7 @@
                   offsetFromSymbolStart = "100">
                </Location>
                <Location
-                  uuid = "1A4C2D91-1713-419A-8F98-2E118A90D4B3 - 50b8f50b969e53ca"
+                  uuid = "1A4C2D91-1713-419A-8F98-2E118A90D4B3 - 1e382194e149516e"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -292,7 +292,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "217C7A18-1B0A-4FC4-9CAC-1770F2967E2B - e3857d001cd1cdd6"
+                  uuid = "217C7A18-1B0A-4FC4-9CAC-1770F2967E2B - 9d2b4c889cdc058a"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -307,7 +307,7 @@
                   offsetFromSymbolStart = "388">
                </Location>
                <Location
-                  uuid = "217C7A18-1B0A-4FC4-9CAC-1770F2967E2B - e3857d001cd1cdd6"
+                  uuid = "217C7A18-1B0A-4FC4-9CAC-1770F2967E2B - 9d2b4c889cdc058a"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -484,7 +484,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "69922E28-3617-4E5B-80E5-ECEC4F348FC9 - b40ce8d74c5beb0d"
+                  uuid = "69922E28-3617-4E5B-80E5-ECEC4F348FC9 - 1cf0eb7ddf2186cb"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -496,10 +496,10 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "198"
                   endingLineNumber = "198"
-                  offsetFromSymbolStart = "100">
+                  offsetFromSymbolStart = "40">
                </Location>
                <Location
-                  uuid = "69922E28-3617-4E5B-80E5-ECEC4F348FC9 - b40ce8d74c5beb0d"
+                  uuid = "69922E28-3617-4E5B-80E5-ECEC4F348FC9 - 1cf0eb7ddf2186cb"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -511,7 +511,7 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "198"
                   endingLineNumber = "198"
-                  offsetFromSymbolStart = "680">
+                  offsetFromSymbolStart = "592">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -945,6 +945,150 @@
             startingLineNumber = "425"
             endingLineNumber = "425"
             landmarkName = "armarLocos()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9E2D1BDA-7806-48CD-820C-EE8C67B1EF39"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AKSwiftSlideMenu/BalancesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "925"
+            endingLineNumber = "925"
+            landmarkName = "armarBalances()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "112199CA-BF49-4D55-86AB-074843E13493"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AKSwiftSlideMenu/ApuestaLocaViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "335"
+            endingLineNumber = "335"
+            landmarkName = "armarLocos()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FC3A6D9B-59FD-4332-B4C6-20365DB0CD75"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AKSwiftSlideMenu/VistaPartidoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "188"
+            endingLineNumber = "188"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A58B952A-B40D-46EB-A284-0F14BA2F49AF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AKSwiftSlideMenu/BalancesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "839"
+            endingLineNumber = "839"
+            landmarkName = "armarBalances()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "81C05BFD-039A-4CA3-B537-CDF80ADD9019"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AKSwiftSlideMenu/PaisesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
+            landmarkName = "obtenerDatos()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A0FABBA6-B178-4119-9885-7D082362EB8A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AKSwiftSlideMenu/PaisesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
+            landmarkName = "obtenerDatos()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F49ED7D7-197B-4B8D-BBBB-B2572A91249C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AKSwiftSlideMenu/PaisesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "225"
+            endingLineNumber = "225"
+            landmarkName = "obtenerDatos()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1F566B12-A4C6-4EA5-9309-D5ECDD6270F7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AKSwiftSlideMenu/PaisesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
+            landmarkName = "obtenerDatos()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8FF2BF71-99D5-47C3-81B5-BBED713CE9BD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AKSwiftSlideMenu/BalancesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "286"
+            endingLineNumber = "286"
+            landmarkName = "armarBalances()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

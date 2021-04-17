@@ -238,7 +238,7 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
         completos.append(contentsOf: todos)
         
         completos.append(contentsOf: menos35)
-      
+        
         
         
         
@@ -440,7 +440,7 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                 {
                                     if np.localvisitante == "V"
                                     {
-                                       
+                                        
                                         rp1.append(np)
                                         
                                     }
@@ -460,7 +460,7 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                 }
                                 else if np.tipoResPartido == "2"
                                 {
-                                   
+                                    
                                     rp2.append(np)
                                     
                                 }
@@ -470,7 +470,7 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                 }
                                 else if np.tipoResPartido == "4"
                                 {
-                                   
+                                    
                                     rp4.append(np)
                                     
                                 }
@@ -496,7 +496,7 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                         {
                                             np.acertado = "0"
                                         }
-                                       
+                                        
                                         rp6.append(np)
                                         
                                     }
@@ -516,7 +516,7 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                                         {
                                                             if np.cuota != ""
                                                             {
-                                                            rp6.append(np)
+                                                                rp6.append(np)
                                                             }
                                                         }
                                                     }
@@ -532,7 +532,7 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                 }
                                 else if np.tipoResPartido == "8"
                                 {
-                                   
+                                    
                                     rp8.append(np)
                                     
                                 }
@@ -540,7 +540,7 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                 {
                                     if np.localvisitante == "L"
                                     {
-                                       
+                                        
                                         rp9.append(np)
                                         
                                     }
@@ -553,7 +553,7 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                 {
                                     if np.localvisitante == "L"
                                     {
-                                       
+                                        
                                         rp11.append(np)
                                         
                                     }
@@ -616,8 +616,8 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                     np.acertado = "0"
                                 }
                             }
-                           
-                                rp13.append(np)
+                            
+                            rp13.append(np)
                             
                         }
                         
@@ -645,8 +645,8 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                 {
                                     np.acertado = "0"
                                 }
-                               
-                                    rp14.append(np)
+                                
+                                rp14.append(np)
                                 
                             }
                             else if (np.balance == "-1.5")
@@ -660,8 +660,8 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                 {
                                     np.acertado = "0"
                                 }
-                              
-                                    rp14.append(np)
+                                
+                                rp14.append(np)
                                 
                             }
                             else if (np.balance == "+0.5")
@@ -674,8 +674,8 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                 {
                                     np.acertado = "0"
                                 }
-                               
-                                    rp1405.append(np)
+                                
+                                rp1405.append(np)
                                 
                             }
                             else if (np.balance == "-0.5")
@@ -690,7 +690,7 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                     np.acertado = "0"
                                 }
                                 
-                                    rp1405.append(np)
+                                rp1405.append(np)
                                 
                             }
                             else if (np.balance == "+2.5")
@@ -704,7 +704,7 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                     np.acertado = "0"
                                 }
                                 
-                                    rp14.append(np)
+                                rp14.append(np)
                                 
                             }
                             else if (np.balance == "-2.5")
@@ -719,7 +719,7 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                     np.acertado = "0"
                                 }
                                 
-                                    rp14.append(np)
+                                rp14.append(np)
                                 
                             }
                             
@@ -773,8 +773,8 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                     np.acertado = "0"
                                 }
                             }
-                           
-                                rp15.append(np)
+                            
+                            rp15.append(np)
                             
                         }
                         
@@ -827,7 +827,7 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                 }
                             }
                             
-                                rp16.append(np)
+                            rp16.append(np)
                             
                         }
                         
@@ -869,11 +869,15 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                     {
                                         np.acertado = "0"
                                     }
-                                    
                                     if p.tarjetasLocal != nil
                                     {
                                         tarjetasPositivo.append(np)
                                     }
+                                }
+                                else
+                                {
+                                    
+                                    tarjetasPositivo.append(np)
                                     
                                 }
                             }
@@ -899,11 +903,15 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                     {
                                         np.acertado = "0"
                                     }
-                                    
                                     if p.tarjetasLocal != nil
                                     {
                                         tarjetasNegativo.append(np)
                                     }
+                                }
+                                else
+                                {
+                                    
+                                    tarjetasNegativo.append(np)
                                     
                                 }
                             }
@@ -950,24 +958,22 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
                                     {
                                         np.acertado = "0"
                                     }
-                                    
                                     if p.cornersPositivo != nil
                                     {
                                         cornersPositivo.append(np)
                                     }
                                     
+                                    
+                                }
+                                else
+                                {
+                                    
+                                    cornersPositivo.append(np)
+                                    
                                 }
                             }
                             
-                            
-                            
-                            
                         }
-                        
-                        
-                        
-                        
-                        
                         
                     }
                     
@@ -985,7 +991,7 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
         }
         
         
-         conCuota.sort(by: sortPorCuota)
+        conCuota.sort(by: sortPorCuota)
         
         rp1.sort(by: sortPorCuota)
         rp2.sort(by: sortPorCuota)
@@ -1032,21 +1038,21 @@ class BalancesViewController: BaseViewController,UITableViewDelegate,UITableView
     }
     
     func sortPorCuota(this:EstructuraEquiposPartido, that:EstructuraEquiposPartido) -> Bool {
-             var ti = 0.00
-              if (this.cuota != nil && this.cuota! != "")
-              {
-                   ti = this.cuota!.toDouble()!
-              }
-              
-              var ta = 0.00
-              if (that.cuota != nil && that.cuota! != "")
-              {
-                   ta = that.cuota!.toDouble()!
-              }
-              
-              
-                  return ti > ta
-          }
+        var ti = 0.00
+        if (this.cuota != nil && this.cuota! != "")
+        {
+            ti = this.cuota!.toDouble()!
+        }
+        
+        var ta = 0.00
+        if (that.cuota != nil && that.cuota! != "")
+        {
+            ta = that.cuota!.toDouble()!
+        }
+        
+        
+        return ti > ta
+    }
     
     func  validarCuota ( cuota : String) -> Bool
     {

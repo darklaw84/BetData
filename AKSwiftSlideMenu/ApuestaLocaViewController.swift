@@ -343,7 +343,7 @@ class ApuestaLocaViewController: BaseViewController,UITableViewDelegate,UITableV
                             np.acertado = "0"
                         }
                     }
-                    else if (np.balance == "2X")
+                    else if (np.balance == "X2")
                     {
                         if finalLocal <= finalVisitante && finalizado
                         {
@@ -442,9 +442,15 @@ class ApuestaLocaViewController: BaseViewController,UITableViewDelegate,UITableV
         {
             cuotaFinal = cuotaFinal * p.cuota!.toDouble()!
         }
+        if locos.count > 0
+        {
         
         lblCuotaFinal.text = "Cuota Final: "+String(format: "%.2f", cuotaFinal)
-        
+        }
+        else
+        {
+            lblCuotaFinal.text = ""
+        }
         
         
         
